@@ -1,0 +1,26 @@
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-large);
+
+    svg {
+        max-width:400px;
+
+        .logo-text {
+            fill:var(--white);
+            @media (prefers-color-scheme: light) {
+                fill: var(--black);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+        
+        flex-direction: column;
+
+        svg {
+            max-width:200px;
+        }
+    }
+}

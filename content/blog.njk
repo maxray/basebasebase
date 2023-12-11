@@ -6,5 +6,35 @@ eleventyNavigation:
 ---
 <h1>Archive</h1>
 
+{% set currentYear = 0 %}
+  {% set yearsToShow = 2 %}
+  {% set displayedYears = [] %}
+
+  {% for post in collections.blogs %}
+    {% set postYear = post.date | extractYear %}
+    {% if yearsToShow != 0 %}
+    {% if postYear != currentYear %}
+      {% if currentYear != 0 %}
+        </ol>
+        {% set displayedYears = displayedYears | union([currentYear]) %}
+        {% if displayedYears | length >= yearsToShow %}
+          {% set yearsToShow = 0 %}
+        {% endif %}
+      {% endif %}
+
+      <h2>{{ postYear }}</h2>
+      <ol class="alt-" data-role="downloads">
+    {% endif %}
+
+    <li><a href="{{ post.data.download }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - {{ post.data.title }}</a>
+    </li>
+
+    {% set currentYear = postYear %}
+    {% endif %}
+  {% endfor %}
+
+</ol>
+
+
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}

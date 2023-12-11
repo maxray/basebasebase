@@ -1,0 +1,104 @@
+@import 'reset';
+@import 'variables';
+@import 'blocks/calling-card';
+
+
+//GLOBAL
+
+body {
+    background-image: url(/img/dots.png);
+    overflow-x: hidden;
+    font-size:16px;
+    font-family: 'Red Hat Display';
+    padding: 2rem;
+}
+
+// Headings
+
+  h1 {
+    font-size:4rem;
+    line-height: 1;
+  }
+
+  h1,h2,h3, h4 ,p {
+    margin-bottom:var(--spacing);
+  }
+
+  h3, h4 {
+    font-size: 1.25rem;
+  }
+
+  .gold h1 em {
+    color: var(--gold);
+  }
+
+  .pink h1 em {
+    color: var(--pink);
+  }
+
+  .english-violet-light h1 em {
+    color: var(--english-violet-light);
+  }
+
+  .green-light h1 em {
+    color: var(--green-light);
+  }
+
+   .blue-light h1 em {
+    color: var(--blue-light);
+  }
+
+  h3 {
+    font-size:2rem;
+    font-weight:300;
+  }
+
+
+// Links {
+  
+a {
+  color: var(--khaki);}
+
+// High contrast selection 
+
+::selection {
+  color: var(--pink);
+
+  // We set this as an RGBA because that's how you get a solid color, by using 0.99
+  background: rgba(var(--pink), 0.99);
+}
+
+// Scrollbar styles
+::-webkit-scrollbar {
+  // height: .15rem;
+  width:5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  // border: 1px solid var(--pink);
+  // border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--khaki);
+  // border-radius: 0.25rem;
+}
+
+// BLOCKS
+// @import 'blocks/button';
+// @import 'blocks/cta';
+// @import 'blocks/footer';
+// @import 'blocks/inner-header';
+// @import 'blocks/skip-link';
+// @import 'blocks/telephone-cta';
+// @import 'blocks/services-list';
+// @import 'blocks/slide-menu';
+// @import 'blocks/testimonial-block';
+// @import 'blocks/timeline';
+
+// UTILITIES
+
+@import 'utilities/visually-hidden';
+@import 'utilities/flow';
+@import 'utilities/gradient-text';

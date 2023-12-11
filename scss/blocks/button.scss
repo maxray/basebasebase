@@ -1,0 +1,18 @@
+// Buttons
+
+.button {
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background: var(--pink);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  border-radius:50px;
+
+  // Make sure hover state trumps all variants with a good ol’ important
+  &:hover {
+    background: var(--khaki) !important;;
+    color: var(--white) !important;}
+
+}

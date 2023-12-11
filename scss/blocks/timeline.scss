@@ -1,0 +1,47 @@
+.timeline {
+
+
+
+    ul {
+        list-style:none;
+        margin:4rem 0 4rem 0;
+        padding:0;
+        display:flex;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction:column;
+        }
+
+        li {
+            border-top: solid 10px var(--khaki-light);
+            padding-top:1rem;
+            padding-right:2rem;
+            position: relative;
+            flex:1;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom:3rem;
+            }
+                
+            h4 {
+                font-size: var(--font-size-medium);
+                margin-bottom:var(--spacing);
+            }
+
+            p {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        li:before {
+            content:"";
+            width:10px;
+            height:20px;
+            position: absolute;
+            background-color: var(--khaki-light);
+            left:0;
+            top:-30px;
+        }
+    }
+    
+}

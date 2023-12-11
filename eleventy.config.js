@@ -11,6 +11,15 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
 module.exports = function(eleventyConfig) {
+
+	//Collections 
+
+	// Returns a collection of meetings in reverse date order
+	eleventyConfig.addCollection('blogs', collection => {
+		return [...collection.getFilteredByGlob('./content/blog/*.md')].reverse();
+	});
+
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
@@ -46,6 +55,66 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	});
+
+	// extract year 
+	eleventyConfig.addFilter('extractYear', function (date) {
+		if (date instanceof Date) {
+			return date.getFullYear();
+		} else {
+			// If the input is not a Date object, try parsing it as a string
+			const parsedDate = new Date(date);
+			if (!isNaN(parsedDate.getTime())) {
+				return parsedDate.getFullYear();
+			}
+		}
+
+		// Return an empty string if the date cannot be processed
+		return '';
+	});
+
+	// day
+
+	eleventyConfig.addFilter('dateDay', function (dateString) {
+		const date = new Date(dateString);
+
+		// Ensure the input is a valid date
+		if (isNaN(date.getTime())) {
+			return 'Invalid Date';
+		}
+
+		// Get the day as a number and the month as a three-letter abbreviation
+		const day = date.getDate();
+
+
+		return `${day}`;
+	});
+
+	// month
+
+	eleventyConfig.addFilter('dateMonth', function (dateString) {
+		const date = new Date(dateString);
+
+		// Ensure the input is a valid date
+		if (isNaN(date.getTime())) {
+			return 'Invalid Date';
+		}
+		const month = date.toLocaleString('default', { month: 'short' });
+
+		return `${month}`;
+	});
+
+	//union
+	eleventyConfig.addFilter('union', function (array1, array2) {
+		if (!Array.isArray(array1) || !Array.isArray(array2)) {
+			console.error('Both arguments must be arrays.');
+			return [];
+		}
+		// Use Set to ensure unique elements
+		const uniqueSet = new Set([...array1, ...array2]);
+
+		// Convert Set back to array
+		return [...uniqueSet];
 	});
 
 	// Get the first `n` elements of a collection.
@@ -108,6 +177,7 @@ module.exports = function(eleventyConfig) {
 			"njk",
 			"html",
 			"liquid",
+			
 		],
 
 		// Pre-process *.md files with: (default: `liquid`)
