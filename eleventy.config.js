@@ -19,6 +19,11 @@ module.exports = function(eleventyConfig) {
 		return [...collection.getFilteredByGlob('./content/blog/*.md')].reverse();
 	});
 
+	// Returns a collection of meetings in reverse date order
+	eleventyConfig.addCollection('caseStudies', collection => {
+		return [...collection.getFilteredByGlob('./content/case-studies/*.md')].reverse();
+	});
+
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`

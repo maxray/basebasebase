@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Archive
   order: 2
 ---
-<h1>Archive</h1>
+<h1>Blog</h1>
 
 {% set currentYear = 0 %}
   {% set yearsToShow = 2 %}
@@ -26,7 +26,7 @@ eleventyNavigation:
       <ol class="alt-" data-role="downloads">
     {% endif %}
 
-    <li><a href="{{ post.data.download }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - {{ post.data.title }}</a>
+    <li><a href="{{ post.data.download }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - <img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="Category Icon" /> {{ post.data.title }}</a>
     </li>
 
     {% set currentYear = postYear %}

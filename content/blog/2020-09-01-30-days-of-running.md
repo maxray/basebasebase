@@ -4,8 +4,11 @@ intro: "What could possibly go wrong! After being 16 seconds off my personal goa
 date: "2020-09-01"
 categories:
   - Play
-thumbnail_image: "/uploads/run-complete.jpg"
 ---
+<figure>
+      {% image "../../public/img/run-complete.jpg", "What could possibly go wrong!" %}
+   <figcaption>What could possibly go wrong!</figcaption>
+</figure>
 
 ### What could possibly go wrong! After being 16 seconds off my personal goal of a 25min 5k before lockdown I haven't run since. So obviously the best way to jump start things is by trying to run in some form for every day in September.
 

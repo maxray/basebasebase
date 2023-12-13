@@ -5,7 +5,7 @@ categories:
 - Work
 type: post
 status: publish
-thumbnail_image: "/assets/better-forms.png"
+thumbnail_image: "/public/img/better-forms.png"
 meta:
   _edit_last: 1
 author:

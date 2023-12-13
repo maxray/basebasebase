@@ -3,7 +3,7 @@ title: World Cup Dinners 2018
 date: 2018-06-17 08:22:00 Z
 categories:
 - Play
-thumbnail_image: "/uploads/wcdinner.jpg"
+thumbnail_image: "/public/img/wcdinner.jpg"
 ---
 
 ### Having followed Sally Lait's [World Cup Dinners](https://sallylait.com/labs/worldcup2018dinners/) for a couple of tournaments, I decided to have a go this year to add some fun to the football and our meal choices! 

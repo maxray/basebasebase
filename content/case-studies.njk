@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Archive
+  order: 2
+---
+<h1>Case Studies</h1>
+Sadly I can't share lots of the work I do as it is acting under NDA's for agencies and the like. 
+
+Below are some examples of work I can share! 
+
+{% set postslist = collections.caseStudies %}
+{% include "postslist.njk" %}

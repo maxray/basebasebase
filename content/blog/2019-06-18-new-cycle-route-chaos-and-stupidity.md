@@ -3,7 +3,7 @@ title: A new cycle route - but people still being crazy
 date: 2019-06-18 17:00:00 Z
 categories:
 - Play
-thumbnail_image: "/uploads/bike%20crazy.png"
+thumbnail_image: "/public/img/bike%20crazy.png"
 
 ---
 

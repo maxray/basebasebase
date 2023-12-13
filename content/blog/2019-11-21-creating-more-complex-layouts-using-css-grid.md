@@ -3,9 +3,12 @@ title: Creating complex layouts using CSS Grid
 date: 2019-11-21 21:29:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/css-grid-layouts-header.png"
 
 ---
+<figure>
+      {% image "../../public/img/css-grid-layouts-header.png", "Creating complex layouts using CSS Grid" %}
+   <figcaption>Creating complex layouts using CSS Grid</figcaption>
+</figure>
 
 ### This tutorial is for people who have heard of css-grid and are interested to see what it can do or perhaps are not sure how to fit it into their workflow. 
 
@@ -42,7 +45,10 @@ So let’s have a look at the design and work out what to do.
 #### The desktop view
 A 2 column overlay with an image, tree icon and then typography also overlaid. Not insanely complex at first glance, but looks can be deceiving.
 
-![Desktop and mobile views of the design](/uploads/css-grid-layouts-the-aim.png "Desktop and mobile views of the design")
+<figure>
+      {% image "../../public/img/css-grid-layouts-the-aim.png", "Desktop and mobile views of the design" %}
+   <figcaption>Desktop and mobile views of the design</figcaption>
+</figure>
 
 If you were thinking in a Bootstrap way you might think a row and two columns would be great. So let’s see how this would transfer to mobile?
 
@@ -106,7 +112,10 @@ But because we are focusing on the elements and using a different approach we ca
 
 Clean simple code which just on its own gives us an output that makes sense. Adding just the simplest of button and font styles and suddenly things are looking tidy.
 
-![Simple styling gives good results!](/uploads/css-grid-layouts-simple-style.png "Simple styling gives good results!")
+<figure>
+      {% image "../../public/img/css-grid-layouts-simple-style.png", "Simple styling gives good results!" %}
+   <figcaption>Simple styling gives good results!</figcaption>
+</figure>
 
 So far so good… but this looks nothing like the design I was given, the designer is going to kill me! We will come to that next, but what is good to note here is that you have created a good base to build from. All those people with odd old browsers will be happy you made the effort. :) 
 
@@ -122,7 +131,11 @@ Like them or not they are super useful so I am going to start with a media query
 
 I start be defining a grid of columns and rows to place my content. By using a custom property for the heading we can set the row to be the same as the chosen font, this will come in useful when we move to desktop size.
 
-![Intended mobile grid layout](/uploads/css-grid-layouts-mobile.png "Intended mobile grid layout")
+<figure>
+      {% image "../../public/img/css-grid-layouts-mobile.png", "Intended mobile grid layout" %}
+   <figcaption>Intended mobile grid layout</figcaption>
+</figure>
+
 
 ```css
   .grid-section{
@@ -147,7 +160,10 @@ We can then assign row values to the html items to achieve the mobile layout, no
 
 Once we get to around 768px it is time to start implementing the designers vision for desktop. At this point we start using a 4 column grid and then position the image and the blue div with the tree icon so that they overlap each other. Z-index is applied to sit the blue div behind the image. To create the overlap I have 2 fixed with columns ( 1 and 3) and then the other 2 are fractional widths (fr). The blue box is set to cover columns 1 to 4 and the image 3 to the end. We use -1 to set this although you could set it to 5 in this case. 
 
-![The intended grid layout for desktop view](/uploads/css-grid-layouts-desktop.png "The intended grid layout for desktop view")
+<figure>
+      {% image "../../public/img/css-grid-layouts-desktop.png", "The intended grid layout for desktop view" %}
+   <figcaption>The intended grid layout for desktop view</figcaption>
+</figure>
 
 Position the secondary header in the same grid column and rows as the image and then make use of the align and justify self  rules that you will no doubt know from using flex.
 

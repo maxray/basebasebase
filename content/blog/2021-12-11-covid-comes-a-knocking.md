@@ -3,9 +3,12 @@ title: Covid comes a knocking
 date: 2021-12-11 21:29:00 Z
 categories:
   - Play
-thumbnail_image: "/uploads/covid-strikes.jpeg"
-
 ---
+
+<figure>
+      {% image "../../public/img/covid-strikes.jpeg", "Covid comes a knocking" %}
+   <figcaption>Covid comes a knocking</figcaption>
+</figure>
 
 ### Felt we had done pretty well as a family to get so far through the pandemic but on the eve of my booster jab Covid had other ideas!
 

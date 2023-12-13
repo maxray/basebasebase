@@ -3,7 +3,7 @@ title: 3 mistakes small businesses make with Wordpress
 date: 2019-02-06 08:44:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/plugins.png"
+thumbnail_image: "/public/img/plugins.png"
 
 ---
 

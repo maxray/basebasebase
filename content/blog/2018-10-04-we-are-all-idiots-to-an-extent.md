@@ -3,7 +3,7 @@ title: We are ALL idiots... to an extent
 date: 2018-10-04 19:00:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/traffic.png"
+thumbnail_image: "/public/img/traffic.png"
 ---
 
 ### I have been commuting into Birmingham for about 8 weeks now, by cycle  the majority of the time. During this time I have witnessed some crazy moves by car drivers, cyclists, motorcyclists, buses and pedestrians.. In fact everyone!

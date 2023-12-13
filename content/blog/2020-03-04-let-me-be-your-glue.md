@@ -3,9 +3,12 @@ title: Let me be your glue
 date: 2020-03-04 21:29:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/Screenshot%202020-03-04%20at%2023.39.54.png"
-
 ---
+
+<figure>
+      {% image "../../public/img/glue.png", "Let me be your glue" %}
+   <figcaption>Let me be your glue</figcaption>
+</figure>
 
 ### This post is partly me wondering why I don’t seem to fit in, a slight moan at how unrealistic job adverts seem to be and a wish for simpler times!
 

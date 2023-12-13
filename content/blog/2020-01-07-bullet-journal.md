@@ -3,9 +3,13 @@ title: A new process for the New Year
 date: 2020-01-07 21:29:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/bullet-journals.jpg"
 
 ---
+
+<figure>
+      {% image "../../public/img/bullet-journals.jpg", "A new process for the New Year" %}
+   <figcaption>A new process for the New Year</figcaption>
+</figure>
 
 ### After trying and failing to keep up with 'to do' lists using digital methods I have turned to analogue!
 
@@ -23,7 +27,11 @@ So if I had a huge amount of spare time I could imagine me spending hours creati
 
 The most basic principles are to use an index, a month page to list important things and tasks to be done and then a weekly page that deals with the tasks themselves. You use symbols to signify the type of note, be it a task, event or birthday and then cross them off once complete or move them over to the next day or week if they are postponed.
 
-![A simple month list to mark important dates](/uploads/bullet-journals-2.jpg "A simple month list to mark important dates")
+<figure>
+      {% image "../../public/img/bullet-journals-2.jpg", "A simple month list to mark important dates" %}
+   <figcaption>A simple month list to mark important dates</figcaption>
+</figure>
+
 
 ### What I think
 

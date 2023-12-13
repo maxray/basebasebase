@@ -3,7 +3,7 @@ title: Screen Printing Fun
 date: 2016-03-17 09:02:00 Z
 categories:
 - Play
-thumbnail_image: "/uploads/printing2.jpg"
+thumbnail_image: "/public/img/printing2.jpg"
 type: 
 status: publish
 author:

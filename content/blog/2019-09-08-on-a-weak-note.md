@@ -3,9 +3,12 @@ title: On a weak note
 date: 2019-09-08 17:00:00 Z
 categories:
 - Work
-thumbnail_image: "/uploads/weeknotes.png"
 
 ---
+<figure>
+      {% image "../../public/img/weeknotes.png", "On a weak note" %}
+   <figcaption>On a weak note</figcaption>
+</figure>
 
 ### I gave it a go, and to start with it seemed really useful, a highish level diary to note things that happened day to day.
 
