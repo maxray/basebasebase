@@ -1,0 +1,19 @@
+.profile__pic {
+  width: 100%;
+  transform: rotate(4deg);
+  max-width: 90%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 92%;
+  background-image: url(/img/sush-kelly.png);
+  cursor: pointer;
+  margin-bottom: 4rem;
+
+}
+
+.profile__pic:hover {
+  background-image: url(/img/sush-kelly-sketch.png);
+  background-repeat: no-repeat;
+  background-size: 92%;
+}

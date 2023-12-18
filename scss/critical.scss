@@ -1,7 +1,5 @@
 @import 'reset';
 @import 'variables';
-@import 'blocks/calling-card';
-
 
 //GLOBAL
 
@@ -9,8 +7,43 @@ body {
     background-image: url(/img/dots.png);
     overflow-x: hidden;
     font-size:16px;
-    font-family: 'Red Hat Display';
-    padding: 2rem;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    padding: 0 2rem;
+
+    &[data-theme='magenta'] {
+      --themeColor: var(--magenta);
+    }
+
+    &[data-theme='orange'] {
+      --themeColor: var(--orange);
+    }
+
+    &[data-theme='green'] {
+      --themeColor: var(--green);
+    }
+
+    &[data-theme='yellow'] {
+      --themeColor: var(--yellow);
+    }
+
+    main {
+      @media only screen and (min-width: 48rem) {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .left {
+            grid-area: 1 / 1 / 2 / 5;
+          }
+        
+        .right {
+          grid-area: 1 / 5 / 2 / 9;
+        }
+      }
+    }
 }
 
 // Headings
@@ -20,37 +53,15 @@ body {
     line-height: 1;
   }
 
-  h1,h2,h3, h4 ,p {
+  h1,h2,h3, h4 {
     margin-bottom:var(--spacing);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
   }
 
-  h3, h4 {
-    font-size: 1.25rem;
-  }
-
-  .gold h1 em {
-    color: var(--gold);
-  }
-
-  .pink h1 em {
-    color: var(--pink);
-  }
-
-  .english-violet-light h1 em {
-    color: var(--english-violet-light);
-  }
-
-  .green-light h1 em {
-    color: var(--green-light);
-  }
-
-   .blue-light h1 em {
-    color: var(--blue-light);
-  }
-
-  h3 {
-    font-size:2rem;
-    font-weight:300;
+  .title {
+    border-left: solid var(--spacing) var(--themeColor);
+    padding-left: var(--spacing);
   }
 
 
@@ -87,7 +98,12 @@ a {
 }
 
 // BLOCKS
-// @import 'blocks/button';
+@import 'blocks/calling-card';
+@import 'blocks/profile-pic';
+@import 'blocks/switch';
+@import 'blocks/header';
+@import 'blocks/c-card';
+@import 'blocks/button';
 // @import 'blocks/cta';
 // @import 'blocks/footer';
 // @import 'blocks/inner-header';
@@ -102,4 +118,5 @@ a {
 
 @import 'utilities/visually-hidden';
 @import 'utilities/flow';
-@import 'utilities/gradient-text';
+@import 'utilities/layouts';
+// @import 'utilities/gradient-text';

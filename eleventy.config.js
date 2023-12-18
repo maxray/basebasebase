@@ -24,6 +24,20 @@ module.exports = function(eleventyConfig) {
 		return [...collection.getFilteredByGlob('./content/case-studies/*.md')].reverse();
 	});
 
+	// Returns the latest meeting based on the 'date' frontmatter attribute
+	eleventyConfig.addCollection('latestCaseStudy', collection => {
+		// Sort the collection in descending order based on the 'date' attribute
+		const sortedCaseStudy = [...collection.getFilteredByGlob('./content/case-studies/*.md')].sort((a, b) => {
+			const dateA = new Date(a.data.date);
+			const dateB = new Date(b.data.date);
+			return dateB - dateA;
+		});
+
+		// Return only the first item (latest meeting)
+		return sortedCaseStudy.slice(0, 1);
+	});
+
+
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`

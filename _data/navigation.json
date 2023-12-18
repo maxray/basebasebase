@@ -1,23 +1,24 @@
 {
   "items": [
+    
     {
-      "text": "Home",
-      "url": "/"
-    },
-    {
-      "text": "About",
+      "text": "About Me",
+      "class":"magenta",
       "url": "/about/"
     },
     {
       "text": "Case Studies",
+      "class": "green",
       "url": "/case-studies/"
     },
     {
       "text": "Blog",
+      "class": "orange",
       "url": "/blog/"
     },
     {
-      "text": "Contact",
+      "text": "Get in touch",
+      "class": "yellow",
       "url": "/contact/"
     }
   ]

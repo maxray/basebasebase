@@ -1,0 +1,14 @@
+  <script>
+function toggleClassOnCheckboxChange() {
+     const checkbox = document.getElementById('toggleSwitch');
+      const htmlTag = document.documentElement;
+
+    checkbox.addEventListener('change', function() {
+      htmlTag.classList.toggle('jaunty', checkbox.checked);
+    });
+  }
+
+  // Call the function to set up the event listener
+  toggleClassOnCheckboxChange();
+
+</script>

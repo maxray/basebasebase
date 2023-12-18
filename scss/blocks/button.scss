@@ -1,18 +1,19 @@
 // Buttons
 
 .button {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.2rem;
   transition: all 0.3s ease-in;
   display: inline-block;
-  padding: 0.5rem 2rem;
-  background: var(--pink);
-  color: var(--white);
+  padding: .25rem .5rem .25rem .25rem;
+  border-left: solid 1rem var(--linkColor);
+  background-color: color-mix(in srgb, var(--linkColor) 10%, transparent);
   text-decoration: none;
-  text-align: center;
-  border-radius:50px;
-
+  display: inline-block;
   // Make sure hover state trumps all variants with a good ol’ important
-  &:hover {
-    background: var(--khaki) !important;;
-    color: var(--white) !important;}
+  // &:hover {
+  //   background: var(--khaki) !important;
+  //   color: var(--white) !important;}
 
 }

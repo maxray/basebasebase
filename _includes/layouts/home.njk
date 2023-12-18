@@ -2,7 +2,15 @@
 layout: layouts/base.njk
 ---
 
-
+<div class="left">
 {{ content | safe }}
-
+{% include  "partials/why-work-with-me.html" %}
+</div>
+<div class="right">
+<div class="split">
+{% include  "partials/sush-pic.html" %}
 {% include  "partials/calling-card.html" %}
+</div>
+{% include  "partials/latest-case-study.html" %}
+{% include  "partials/latest-posts.html" %}
+</div>

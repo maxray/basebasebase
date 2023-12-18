@@ -36,16 +36,15 @@
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300&family=Caveat:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body data-theme="{{theme}}">
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
-		<header>
-			<a href="/" class="home-link" title="home">{% include "images/logo.svg" %} </a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
+		<header class="header">
+       <a href="/" class="home-link" title="home">{% include "images/logo.svg" %} </a>
+      <nav class="nav">
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul>
 				{% for item in navigation.items %}
@@ -55,14 +54,26 @@
 					{% endfor %}
 				</ul>
 			</nav>
-		</header>
+    </header>
 
 		<main id="skip">
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
-
+		<footer>
+<a href="/" class="home-link" title="home">{% include "images/logo.svg" %} </a>
+			<small>
+				&#169; 1974&#8211; 
+				<a href="{{ metadata.url }}">{{ metadata.title }}</a>
+				</small>
+			<!-- Rounded switch -->
+			<label class="switch">
+				<input type="checkbox" id="toggleSwitch">
+				<span class="slider round"></span>
+			</label> Jaunty switch 
+		</footer>
+			{% include "js/footer-scripts.html" %}
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+
 	</body>
 </html>

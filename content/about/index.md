@@ -3,8 +3,9 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: About Me
   order: 3
+theme: magenta
 ---
-# I'm Sush, I design, build & maintain websites.
+<h1 class="title">I'm Sush, I design, build & maintain websites.</h1>
 
 I mainly work with smaller clients or help out design agencies and really enjoy anything with an ethical or social mission.
 

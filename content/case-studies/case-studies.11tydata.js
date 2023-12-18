@@ -3,4 +3,5 @@ module.exports = {
 		"case-studies"
 	],
 	"layout": "layouts/case-study.njk",
+	"theme": "green"
 };

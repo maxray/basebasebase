@@ -4,26 +4,12 @@ eleventyNavigation:
   key: Home
   order: 1
 numberOfLatestPostsToShow: 3
+numberOfCase StudiesToShow: 1
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1 class="gradient-text" >Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
+<h1>I'm Sush, I design, build & maintain websites.</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+I mainly work with smaller clients or help out design agencies and really enjoy anything with an ethical or social mission.
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+I currently have some availability over the next 2 months - so if you have a project that you think I might be a good fit for get in touch.
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
