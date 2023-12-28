@@ -1,16 +1,15 @@
 @import 'reset';
 @import 'variables';
+@import 'utilities/torem';
 
 //GLOBAL
 
 body {
     background-image: url(/img/dots.png);
-    background-attachment: fixed;
     overflow-x: hidden;
-    font-size:16px;
+    font-size: var(--step--1);
     font-family: 'Bitter', serif;
     font-weight: 400;
-    padding: 0 2rem;
 
     &[data-theme='magenta'] {
       --themeColor: var(--magenta);
@@ -33,8 +32,8 @@ body {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: var(--space-m);
+        grid-row-gap: var(--space-m);
 
         .left {
             grid-area: 1 / 1 / 2 / 5;
@@ -50,52 +49,51 @@ body {
 // Headings
 
   h1 {
-    font-size:4rem;
+    font-size:var(--step-5);
     line-height: 1;
   }
 
   h1,h2,h3, h4 {
-    margin-bottom:var(--spacing);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
   }
 
   .title {
-    border-left: solid var(--spacing) var(--themeColor);
-    padding-left: var(--spacing);
+    border-left: solid var(--space-s) var(--themeColor);
+    padding-left: var(--space-s);
   }
 
-
 // Links {
-  
+
 a {
-  color: var(--khaki);
+  color: var(--black);
 }
+
 
 // High contrast selection 
 
 ::selection {
-  color: var(--pink);
+  color: var(--magenta);
 
   // We set this as an RGBA because that's how you get a solid color, by using 0.99
-  background: rgba(var(--pink), 0.99);
+  background: rgba(var(--magenta), 0.99);
 }
 
 // Scrollbar styles
 ::-webkit-scrollbar {
-  // height: .15rem;
+  height: .15rem;
   width:5px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  // border: 1px solid var(--pink);
-  // border-radius: 0.25rem;
+  border: 1px solid var(--magenta);
+  border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--khaki);
-  // border-radius: 0.25rem;
+  background-color: var(--magenta);
+  border-radius: 0.25rem;
 }
 
 // BLOCKS
@@ -106,7 +104,7 @@ a {
 @import 'blocks/c-card';
 @import 'blocks/button';
 // @import 'blocks/cta';
-// @import 'blocks/footer';
+@import 'blocks/footer';
 // @import 'blocks/inner-header';
 // @import 'blocks/skip-link';
 // @import 'blocks/telephone-cta';
@@ -119,5 +117,6 @@ a {
 
 @import 'utilities/visually-hidden';
 @import 'utilities/flow';
+
 @import 'utilities/layouts';
 // @import 'utilities/gradient-text';

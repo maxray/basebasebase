@@ -1,10 +1,46 @@
 .c-card {
+display: flex;
+gap: var(--space-l);
+flex-direction: column;
+margin-left: var(--flow-space);
+margin-right: var(--flow-space);
 
+figure img{
+  min-width: 150px;
+  max-width: 280px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 30rem) and (max-width: 48rem) {
+  flex-direction: row;
+}
+
+
+@media only screen and (min-width: 75rem) {
+  flex-direction: row;
+}
 
 // Case Study Card 
 
 &--casestudy {
   --linkColor: var(--green);
   --themeColor: var(--green);
+
+  .flow {
+    --flow-space: var(--space-xs);
+  }
+}
+
+// Post Card 
+
+&--post {
+  
+  --linkColor: var(--orange);
+  --themeColor: var(--orange);
+
+  .flow {
+    --flow-space: var(--space-xs);
+  }
 }
 }

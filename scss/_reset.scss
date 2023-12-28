@@ -29,6 +29,10 @@ dd {
   margin: 0;
 }
 
+time {
+  display: inline-block;
+}
+
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
@@ -56,6 +60,7 @@ a:not([class]) {
 img  {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -74,8 +79,4 @@ select {
     transition-duration: 0.01s !important;
     scroll-behavior: auto !important;
   }
-}
-
-b {
-  font-family: 'highgate_trialbold';
 }

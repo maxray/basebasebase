@@ -2,11 +2,13 @@
 layout: layouts/base.njk
 ---
 
-<div class="left">
+<div class="left flow">
+<div>
 {{ content | safe }}
+</div>
 {% include  "partials/why-work-with-me.html" %}
 </div>
-<div class="right">
+<div class="right flow">
 <div class="split">
 {% include  "partials/sush-pic.html" %}
 {% include  "partials/calling-card.html" %}

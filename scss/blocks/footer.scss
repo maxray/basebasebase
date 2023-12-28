@@ -1,35 +1,19 @@
 footer {
-    margin-top:var(--spacing-large);
+    position: sticky;
+    top: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+    margin-top:var(--space-2xl);
     font-size: var(--font-size-small);
-    .footer-top {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: var(--spacing-medium);
+    padding: var(--space-2xl);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
 
-        .nav-list {
-            display: flex;
-
-            li {
-                margin-right:.5rem;
-
-                a {
-                    color:var(--khaki);
-                    @media (prefers-color-scheme: light) {
-                        color:var(--pink);
-                    }
-                    text-decoration:none;
-                }
+    svg {
+        width: 10rem;
+        .st0 {
+                fill: var(--white);
             }
-
-            li:not(:last-child):after {
-                content:"|";
-                margin-left:5px;
-            }
-        }
-    }
-
-    .footer-small-print {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
     }
 }

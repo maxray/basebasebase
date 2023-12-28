@@ -1,7 +1,9 @@
 ---
 title: "30 Days of running"
-intro: "What could possibly go wrong! After being 16 seconds off my personal goal of a 25min 5k before lockdown I haven't ran at all since. Obviously the best way to jump start things is by trying to run in some form for every day in September."
+intro: >
+  "What could possibly go wrong! After being 16 seconds off my personal goal of a 25min 5k before lockdown I haven't ran at all since. Obviously the best way to jump start things is by trying to run in some form for every day in September."
 date: "2020-09-01"
+thumbnail_image: "img/run-complete.jpg"
 categories:
   - Play
 ---
@@ -11,7 +13,7 @@ categories:
 </figure>
 
 ### What could possibly go wrong! After being 16 seconds off my personal goal of a 25min 5k before lockdown I haven't run since. So obviously the best way to jump start things is by trying to run in some form for every day in September.
-
+<!--more-->
 I like to have some accountability so decided to document each day here. The 30 days went by pretty quickly, I only had a couple of days where I didn't fancy getting up to put my trainers on. One surprise was that there wasn't one rainy run in the whole month... in September! :S 
 
 I had the company of my daughter on recovery runs as she is doing the c25k so got a bit of father/daughter bonding in as a bonus.

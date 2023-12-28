@@ -1,7 +1,13 @@
 {% for item in collections.latestCaseStudy %}
-<div class="c-card--casestudy">
-  <h3 class="title">{{ item.data.title  }}</h3>
-  <p>{{ item.data.intro  }}</p>
-  <a href="" class="button">Read Case Study</a>
+<div class="c-card c-card--casestudy">
+  <div class="flow">
+    <h3 class="title">{{ item.data.title  }}</h3>
+    <p>{{ item.data.intro  }}</p>
+    <a href="" class="button">Read Case Study</a>
+  </div>
+  <figure>
+    {% image "../public/img/placeholder.jpeg", "Andy Clarke" %}
+    <figcaption>Andy Clarke</figcaption>
+  </figure>
 </div>
 {% endfor %}

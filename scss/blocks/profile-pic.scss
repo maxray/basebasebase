@@ -1,6 +1,5 @@
 .profile__pic {
   width: 100%;
-  transform: rotate(4deg);
   max-width: 90%;
   margin: auto;
   background-repeat: no-repeat;
@@ -16,4 +15,14 @@
   background-image: url(/img/sush-kelly-sketch.png);
   background-repeat: no-repeat;
   background-size: 92%;
+}
+
+
+[data-jauntyness="jaunty"] {
+
+  .profile__pic {
+      transform: rotate(4deg);
+  }
+
+
 }

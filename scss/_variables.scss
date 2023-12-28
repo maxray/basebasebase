@@ -9,10 +9,10 @@
     --yellow: #d7fb65;
     
 
-    --spacing-small: .5rem;
-    --spacing: 1rem;
-    --spacing-medium: 2rem;
-    --spacing-large: 4rem;
+    // --spacing-small: .5rem;
+    // --spacing: 1rem;
+    // --spacing-medium: 2rem;
+    // --spacing-large: 4rem;
 
     --flow-space: 2rem;
 
@@ -21,5 +21,28 @@
     --font-size-medium: 1.25rem;
 
     --cc-btn-primary-bg: var(--pink) !important;
+
+    //Fluid Sizes
+
+    --step--2: clamp(0.8681rem, 0.8052rem + 0.3148vw, 1.12rem);
+    --step--1: clamp(1.0419rem, 0.9523rem + 0.4477vw, 1.4rem);
+    --step-0: clamp(1.25rem, 1.125rem + 0.625vw, 1.75rem);
+    --step-1: clamp(1.5rem, 1.3281rem + 0.8594vw, 2.1875rem);
+    --step-2: clamp(1.8rem, 1.5664rem + 1.168vw, 2.7344rem);
+    --step-3: clamp(2.16rem, 1.8455rem + 1.5727vw, 3.4181rem);
+    --step-4: clamp(2.5919rem, 2.1717rem + 2.1008vw, 4.2725rem);
+    --step-5: clamp(3.1106rem, 2.5531rem + 2.7875vw, 5.3406rem);
+
+    //Fluid Space
+
+    --space-3xs: clamp(0.3125rem, 0.2813rem + 0.1563vw, 0.4375rem);
+    --space-2xs: clamp(0.625rem, 0.5625rem + 0.3125vw, 0.875rem);
+    --space-xs: clamp(0.9375rem, 0.8438rem + 0.4688vw, 1.3125rem);
+    --space-s: clamp(1.25rem, 1.125rem + 0.625vw, 1.75rem);
+    --space-m: clamp(1.875rem, 1.6875rem + 0.9375vw, 2.625rem);
+    --space-l: clamp(2.5rem, 2.25rem + 1.25vw, 3.5rem);
+    --space-xl: clamp(3.75rem, 3.375rem + 1.875vw, 5.25rem);
+    --space-2xl: clamp(5rem, 4.5rem + 2.5vw, 7rem);
+    --space-3xl: clamp(7.5rem, 6.75rem + 3.75vw, 10.5rem);
 
 }

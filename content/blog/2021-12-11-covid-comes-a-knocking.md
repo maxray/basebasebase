@@ -1,6 +1,9 @@
 ---
 title: Covid comes a knocking
 date: 2021-12-11 21:29:00 Z
+intro: >
+  Felt we had done pretty well as a family to get so far through the pandemic but on the eve of my booster jab Covid had other ideas!
+thumbnail_image: "img/covid-strikes.jpeg"
 categories:
   - Play
 ---
