@@ -7,11 +7,15 @@
 				<h3 class="title">{{ post.data.title  }}</h3>
 				<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
 				<p>{{ post.data.intro  }}</p>
-				<a href="{{ post.url }}" class="button">Read Case Study</a>
+				<a href="{{ post.url }}" class="button">Read Post</a>
 			</div>
-			<figure>
-				<img src="{{post.data.thumbnail_image }}" />
-			</figure>
+  <figure>
+
+{% set img = post.data.thumbnail_image %}
+{{ img }}
+    {% image img, post.data.title  %}
+    <figcaption>{{ post.data.title }}</figcaption>
+  </figure>
 		</div>
 	</li>
 {% endfor %}

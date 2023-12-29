@@ -1,19 +1,24 @@
 ---
-layout: layouts/base.njk
+layout: layouts/default.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
-{# %- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss % #}
-{# %- css %}{% include "public/css/prism-diff.css" %}{%- endcss % #}
-<h1>{{ title }}</h1>
-
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
-
+<div class="post-header split">
+	<div>
+	<h1>{{ title }}</h1>
+	<ul class="post-metadata">
+		<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+		{%- for tag in tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+		{%- endfor %}
+	</ul>
+	</div>
+	<div>
+{%- if thumbnail_image %}
+{{ thumbnail_image }}
+{%- endif %}
+	</div>
+</div>
+<div class="post-content">
 {{ content | safe }}
 
 {%- if collections.posts %}
@@ -26,3 +31,4 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+</div>

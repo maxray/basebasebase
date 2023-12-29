@@ -3,7 +3,7 @@ title: The Sun will still rise tomorrow
 date: 2018-05-24 10:51:00 Z
 categories:
 - Work
-thumbnail_image: "/public/img/sunrise.png"
+thumbnail_image: "../public/img/sunrise.png"
 ---
 
 **After chatting to quite a few small business owners and start ups I have noticed some real confusion and panic about the GDPR legislation coming into force in a few days. In my opinion there really is no reason to be overly worried, the sun will still rise!**

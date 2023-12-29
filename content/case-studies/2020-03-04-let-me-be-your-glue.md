@@ -3,7 +3,7 @@ title: Let me be your glue
 date: 2020-03-04 21:29:00 Z
 categories:
 - Work
-thumbnail_image: "/img/Screenshot%202020-03-04%20at%2023.39.54.png"
+thumbnail_image: "../public/img/placeholder.jpeg"
 
 ---
 

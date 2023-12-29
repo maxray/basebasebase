@@ -3,7 +3,7 @@ title: NET Magazine - Design Challenge
 date: 2018-02-27 21:34:00 Z
 categories:
 - Work
-thumbnail_image: "/public/img/design_challenge.png"
+thumbnail_image: "../public/img/design_challenge.png"
 
 ---
 

@@ -31,3 +31,8 @@ display: grid;
     }
 }
  }
+
+.full-width {
+  grid-area: 1 / 1 / 2 / 9;
+}
+

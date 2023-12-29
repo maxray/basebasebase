@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/default.njk
 eleventyNavigation:
   key: Archive
   order: 2
@@ -27,7 +27,7 @@ theme: orange
       <ol class="alt-" data-role="downloads">
     {% endif %}
 
-    <li><a href="{{ post.data.download }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - <img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="Category Icon" /> {{ post.data.title }}</a>
+    <li><a href="{{ post.url }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - <img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="Category Icon" /> {{ post.data.title }}</a>
     </li>
 
     {% set currentYear = postYear %}
@@ -35,7 +35,3 @@ theme: orange
   {% endfor %}
 
 </ol>
-
-
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}

@@ -5,9 +5,8 @@ layout: layouts/base.njk
 <div class="left flow">
 <div>
 {{ content | safe }}
-</div>
-</div>
+
 <div class="right flow">
-{% include  "partials/sush-pic.html" %}
-{% include  "partials/tape-deck.html" %}
+{% set postslist = collections.caseStudies %}
+{% include "partials/postslist.njk" %}
 </div>

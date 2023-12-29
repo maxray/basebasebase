@@ -3,11 +3,12 @@
   <div class="flow">
     <h3 class="title">{{ item.data.title  }}</h3>
     <p>{{ item.data.intro  }}</p>
-    <a href="" class="button">Read Case Study</a>
+    <a href="{{ item.url }}" class="button">Read Case Study</a>
   </div>
   <figure>
 
 {% set img = item.data.thumbnail_image %}
+{{ img }}
     {% image img, item.data.title  %}
     <figcaption>{{ item.data.title }}</figcaption>
   </figure>

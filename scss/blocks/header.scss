@@ -17,11 +17,12 @@
     .home-link {
 
         svg {
-            width: 200px;
+            width: 300px;
             height: auto;
-            padding: var(--space-s) 0 var(--space-m) var(--space-m) ;
+            padding: var(--space-s) 0 0 var(--space-m) ;
 
             @media only screen and (max-width: 48rem) {
+                width: 200px;
                 padding: var(--spacing);
             }
 
@@ -59,9 +60,9 @@
 
             li {
                 flex:none;
-
+                transition: all 0.3s ease-in-out;
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
 
                 a {

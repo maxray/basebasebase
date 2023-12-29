@@ -3,7 +3,7 @@ title: "30 Days of running"
 intro: >
   "What could possibly go wrong! After being 16 seconds off my personal goal of a 25min 5k before lockdown I haven't ran at all since. Obviously the best way to jump start things is by trying to run in some form for every day in September."
 date: "2020-09-01"
-thumbnail_image: "img/run-complete.jpg"
+thumbnail_image: "../public/img/run-complete.jpg"
 categories:
   - Play
 ---

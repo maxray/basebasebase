@@ -3,7 +3,7 @@ title: Well that went quickly...
 date: 2018-12-21 08:08:00 Z
 categories:
 - Work
-thumbnail_image: "/public/img/faces4_op.png"
+thumbnail_image: "../public/img/faces4_op.png"
 ---
 
 ### As yet another year draws to a close I am finishing off a few last amends for clients and sorting out clearing my desk for Christmas. Who knows I might even manage to get my inbox emptied over the break!

@@ -97,6 +97,74 @@ a {
   border-radius: 0.25rem;
 }
 
+/* FORMS */
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 var(--spacing-xs);
+}
+
+[data-role="row"] {
+  margin: 0 0 var(--spacing-s);
+}
+
+[type="email"],
+[type="tel"],
+[type="text"],
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: var(--spacing-s);
+  width: 100%;
+  // background-color: var(--color-input-background);
+  // border-color: var(--color-input-border);
+  // border-width: var(--border-width-r);
+  border-style: solid;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  // transition: all var(--animate-duration-faster) var(--animate-function);
+  // caret-color: var(--color-accent);
+}
+
+textarea {
+  min-height: 9.5rem;
+  resize: vertical;
+  transition: min-height .5s ease-in-out;
+}
+
+[type="email"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+textarea:focus {
+  outline: 0;
+  // border-color: var(--color-border);
+  // accent-color: var(--color-accent);
+}
+
+input[type]::placeholder {
+  // font-family: var(--font-family-default);
+  // font-size: var(--font-size-xxs);
+  // color: var(--color-input-placeholder);
+}
+
+input:focus::-webkit-input-placeholder {
+  transition: opacity .5s .25s ease !important;
+  opacity: 0;
+}
+
+input:focus::placeholder {
+  transition: opacity .5s .25s ease !important;
+  opacity: 0;
+}
+
 // BLOCKS
 @import 'blocks/calling-card';
 @import 'blocks/profile-pic';

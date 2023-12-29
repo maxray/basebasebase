@@ -3,7 +3,7 @@ title: Static Site Generators and JAMStack.
 date: 2018-01-08 21:24:00 Z
 categories:
 - Work
-thumbnail_image: "/public/img/jamstack.png"
+thumbnail_image: "../public/img/jamstack.png"
 
 ---
 
