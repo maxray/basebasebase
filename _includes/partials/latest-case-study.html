@@ -6,8 +6,10 @@
     <a href="" class="button">Read Case Study</a>
   </div>
   <figure>
-    {% image "../public/img/placeholder.jpeg", "Andy Clarke" %}
-    <figcaption>Andy Clarke</figcaption>
+
+{% set img = item.data.thumbnail_image %}
+    {% image img, item.data.title  %}
+    <figcaption>{{ item.data.title }}</figcaption>
   </figure>
 </div>
 {% endfor %}

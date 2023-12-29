@@ -37,6 +37,7 @@ body {
 
         .left {
             grid-area: 1 / 1 / 2 / 5;
+            padding: 0 var(--space-m);
           }
         
         .right {

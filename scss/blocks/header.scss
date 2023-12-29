@@ -44,6 +44,13 @@
             display: flex;
             gap: var(--space-2xs);
 
+            @media only screen and (min-width: 48rem) {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 10;
+            }
+
             @media only screen and (max-width: 48rem) {
                 flex-wrap: wrap;
                 align-items: center;
@@ -52,6 +59,11 @@
 
             li {
                 flex:none;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
                 a {
                     text-decoration: none;
                     color: var(--black);
@@ -81,9 +93,48 @@
                         --background-color: var(--yellow);
                     }
 
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
                 }
             }
         }
+    }
+
+
+}
+
+[data-jauntyness="jaunty"] {
+
+    .nav {
+
+ul {
+gap:0;
+margin-top:-.5rem;
+li {
+
+    &:nth-child(1) a {
+        transform: rotate(2deg);
+    }
+
+    &:nth-child(2) a {
+        transform: rotate(-4deg);
+    }
+
+    &:nth-child(3) a {
+        transform: rotate(2deg);
+    }
+
+    &:nth-child(4) a {
+        transform: rotate(-2deg);
+    }
+
+    a {
+        box-shadow: 0px 0px 10px #cccccc;
+    }
+    }
+}
     }
 
 

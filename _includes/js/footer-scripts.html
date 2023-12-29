@@ -1,5 +1,5 @@
   <script>
-
+const COLOR_MODE_KEY= 'jaunty';
 const STORAGE_KEY = 'user-jaunty-scheme';
 const modeToggleButton = document.querySelector('.js-mode-toggle');
 
@@ -72,6 +72,7 @@ const setButtonLabelAndStatus = currentSetting => {
 const checkbox = document.getElementById('toggleSwitch');
 checkbox.addEventListener('change', function() {
       applySetting(toggleSetting());
+      console.log("CLEEK");
 });
 
 applySetting();
