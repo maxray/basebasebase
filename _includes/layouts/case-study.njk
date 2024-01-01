@@ -1,10 +1,8 @@
 ---
 layout: layouts/base.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
-{# %- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss % #}
-{# %- css %}{% include "public/css/prism-diff.css" %}{%- endcss % #}
-<h1>CASE STUDY {{ title }}</h1>
+<div class="full-width">
+<h1> {{ title }}</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -39,3 +37,4 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+</div>

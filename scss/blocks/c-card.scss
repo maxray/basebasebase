@@ -1,15 +1,24 @@
 .c-card {
 display: flex;
-gap: var(--space-l);
+gap: var(--space-m);
 flex-direction: column;
 margin-left: var(--flow-space);
 margin-right: var(--flow-space);
 
-figure img{
-  min-width: 150px;
-  max-width: 280px;
-  aspect-ratio: 4/3;
-  object-fit: cover;
+figure {
+  background: var(--white);
+  padding: var(--space-s);
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  transform: rotate(2deg);
+  img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  figcaption {
+    font-family: 'Caveat', cursive;
+  }
 }
 
 @media only screen and (min-width: 30rem) and (max-width: 48rem) {
@@ -41,6 +50,20 @@ figure img{
 
   .flow {
     --flow-space: var(--space-xs);
+  }
+
+  flex-direction: row;
+
+  figure {
+    width: 25%;
+    align-self: flex-start;
+    padding: var(--space-2xs);
+    transform: rotate(-2deg);
+
+  }
+
+  .flow {
+    width: 75%;
   }
 }
 }

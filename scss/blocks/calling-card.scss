@@ -51,5 +51,22 @@
       transform: rotate(99deg);
     }
 
+    .socials {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: var(--space-s);
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        gap: var(--space-xs);
+
+        img {
+          max-width: none;;
+        }
+      }
+    }
+
 
 }

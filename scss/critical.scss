@@ -32,19 +32,41 @@ body {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: var(--space-m);
-        grid-row-gap: var(--space-m);
-
+        grid-column-gap: var(--space-s);
+        grid-row-gap: var(--space-s);
+      
         .left {
             grid-area: 1 / 1 / 2 / 5;
             padding: 0 var(--space-m);
           }
+
+        .left-short {
+          grid-area: 1 / 1 / 2 / 4;
+          padding: 0 var(--space-m);
+        }
         
         .right {
           grid-area: 1 / 5 / 2 / 9;
         }
+
+        .right-long {
+          grid-area: 1 / 4 / 2 / 9;
+        }
       }
+
+      @media only screen and (max-width: 48rem) {
+        .left, .right {padding: var(--space-s);}
+      }
+
     }
+}
+
+.intro {
+  padding: var(--space-s);
+  @media only screen and (min-width: 48rem) {
+    position: sticky;
+    top: var(--space-s);
+  }
 }
 
 // Headings
