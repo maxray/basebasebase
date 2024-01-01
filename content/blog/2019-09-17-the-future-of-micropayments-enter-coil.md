@@ -6,7 +6,8 @@ categories:
 
 ---
 <figure>
-      {% image "../../public/img/coil-micropayments.png", "The future of micropayments" %}
+      {% image 'coil-micropayments.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
+
    <figcaption>The future of micropayments</figcaption>
 </figure>
 

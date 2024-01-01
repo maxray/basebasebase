@@ -3,7 +3,7 @@ title: Time spent trying to be productive
 date: 2018-01-15 09:49:00 Z
 categories:
 - Work
-thumbnail_image: "../public/img/rex_play.png"
+thumbnail_image: "rex_play.png"
 
 ---
 

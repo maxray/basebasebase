@@ -3,13 +3,14 @@ title: No news is good news
 date: 2020-06-01 21:29:00 Z
 intro: >
   What the hell have you been up to, you haven’t posted since March! Well no excuses I guess - actually no! a global pandemic has taken its toll and schooling kids AND working is surprisingly draining!
-thumbnail_image: "../public/img/a-ray-of-hope.png"
+thumbnail_image: "a-ray-of-hope.png"
 categories:
   - Play
 
 ---
 <figure>
-      {% image "../../public/img/a-ray-of-hope.png", "A ray of sunshine" %}
+ {% image 'a-ray-of-hope.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
+
    <figcaption>A ray of sunshine</figcaption>
 </figure>
 

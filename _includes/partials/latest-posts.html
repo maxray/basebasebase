@@ -4,7 +4,29 @@
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
+<ol reversed class="flow  postlist">
+{% for post in postslist %}
+	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<div class="c-card c-card--post">
+			<div class="flow ">
+				<h3 class="title">{{ post.data.title  }}</h3>
+				<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+				<p>{{ post.data.intro  }}</p>
+				<a href="{{ post.url }}" class="button">Read Post</a>
+			</div>
+  <figure>
+
+{% set img = post.data.thumbnail_image %}
+{{ img }}
+    {% image img, post.data.title , '(min-width: 600px) 50vw, 100vw' %}
+    <figcaption>{{ post.data.title }}</figcaption>
+  </figure>
+		</div>
+	</li>
+{% endfor %}
+</ol>
+
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}

@@ -5,7 +5,7 @@ categories:
 - Work
 type: post
 status: publish
-thumbnail_image: "../public/img/hermitt.jpg"
+thumbnail_image: "hermitt.jpg"
 meta:
   _edit_last: 1
 author:

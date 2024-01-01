@@ -3,7 +3,7 @@ title: No news is good news
 date: 2020-06-01 21:29:00 Z
 categories:
   - Play
-thumbnail_image: "../public/img/a-ray-of-hope.png"
+thumbnail_image: "a-ray-of-hope.png"
 
 ---
 

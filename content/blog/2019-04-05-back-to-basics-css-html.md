@@ -5,7 +5,7 @@ categories:
 - Work
 type: post
 status: publish
-thumbnail_image: "../public/img/css-grid.png"
+thumbnail_image: "css-grid.png"
 meta:
   _edit_last: 1
 author:

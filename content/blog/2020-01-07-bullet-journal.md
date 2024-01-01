@@ -7,7 +7,7 @@ categories:
 ---
 
 <figure>
-      {% image "../../public/img/bullet-journals.jpg", "A new process for the New Year" %}
+{% image 'bullet-journals.jpg', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>A new process for the New Year</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ So if I had a huge amount of spare time I could imagine me spending hours creati
 The most basic principles are to use an index, a month page to list important things and tasks to be done and then a weekly page that deals with the tasks themselves. You use symbols to signify the type of note, be it a task, event or birthday and then cross them off once complete or move them over to the next day or week if they are postponed.
 
 <figure>
-      {% image "../../public/img/bullet-journals-2.jpg", "A simple month list to mark important dates" %}
+      {% image "bullet-journals-2.jpg", "A simple month list to mark important dates", '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>A simple month list to mark important dates</figcaption>
 </figure>
 

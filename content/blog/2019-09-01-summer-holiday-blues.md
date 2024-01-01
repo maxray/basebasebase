@@ -6,7 +6,7 @@ categories:
 
 ---
 <figure>
-      {% image "../../public/img/summer-holidays.png", "Apple's and chop sticks to watch TV - of course!" %}
+      {% image 'summer-holidays.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>Apple's and chop sticks to watch TV - of course!</figcaption>
 </figure>
 

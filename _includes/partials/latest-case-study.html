@@ -9,7 +9,7 @@
 
 {% set img = item.data.thumbnail_image %}
 {{ img }}
-    {% image img, item.data.title  %}
+    {% image img, item.data.title , '(min-width: 600px) 50vw, 100vw' %}
     <figcaption>{{ item.data.title }}</figcaption>
   </figure>
 </div>

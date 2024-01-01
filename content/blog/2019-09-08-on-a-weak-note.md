@@ -6,7 +6,7 @@ categories:
 
 ---
 <figure>
-      {% image "../../public/img/weeknotes.png", "On a weak note" %}
+      {% image 'weeknotes.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>On a weak note</figcaption>
 </figure>
 

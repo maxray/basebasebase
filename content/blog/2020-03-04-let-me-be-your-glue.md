@@ -6,7 +6,7 @@ categories:
 ---
 
 <figure>
-      {% image "../../public/img/glue.png", "Let me be your glue" %}
+{% image 'glue.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>Let me be your glue</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: The best bike I ever bought... so far.
 date: 2019-01-21 08:08:00 Z
 categories:
 - Play
-thumbnail_image: "../public/img/croix1.png"
+thumbnail_image: "croix1.png"
 ---
 
 ### Back in 2011 I realised I needed a bike to commute on. I didn't know at the time but 8 years on it has become the best bike I have ever had. 

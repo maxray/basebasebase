@@ -6,7 +6,8 @@ categories:
 
 ---
 <figure>
-      {% image "../../public/img/css-grid-layouts-header.png", "Creating complex layouts using CSS Grid" %}
+ {% image 'css-grid-layouts-header.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
+
    <figcaption>Creating complex layouts using CSS Grid</figcaption>
 </figure>
 
@@ -46,7 +47,7 @@ So let’s have a look at the design and work out what to do.
 A 2 column overlay with an image, tree icon and then typography also overlaid. Not insanely complex at first glance, but looks can be deceiving.
 
 <figure>
-      {% image "../../public/img/css-grid-layouts-the-aim.png", "Desktop and mobile views of the design" %}
+      {% image "css-grid-layouts-the-aim.png", "Desktop and mobile views of the design", '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>Desktop and mobile views of the design</figcaption>
 </figure>
 
@@ -113,7 +114,7 @@ But because we are focusing on the elements and using a different approach we ca
 Clean simple code which just on its own gives us an output that makes sense. Adding just the simplest of button and font styles and suddenly things are looking tidy.
 
 <figure>
-      {% image "../../public/img/css-grid-layouts-simple-style.png", "Simple styling gives good results!" %}
+      {% image "css-grid-layouts-simple-style.png", "Simple styling gives good results!", '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>Simple styling gives good results!</figcaption>
 </figure>
 
@@ -132,7 +133,7 @@ Like them or not they are super useful so I am going to start with a media query
 I start be defining a grid of columns and rows to place my content. By using a custom property for the heading we can set the row to be the same as the chosen font, this will come in useful when we move to desktop size.
 
 <figure>
-      {% image "../../public/img/css-grid-layouts-mobile.png", "Intended mobile grid layout" %}
+      {% image "css-grid-layouts-mobile.png", "Intended mobile grid layout", '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>Intended mobile grid layout</figcaption>
 </figure>
 
@@ -161,7 +162,7 @@ We can then assign row values to the html items to achieve the mobile layout, no
 Once we get to around 768px it is time to start implementing the designers vision for desktop. At this point we start using a 4 column grid and then position the image and the blue div with the tree icon so that they overlap each other. Z-index is applied to sit the blue div behind the image. To create the overlap I have 2 fixed with columns ( 1 and 3) and then the other 2 are fractional widths (fr). The blue box is set to cover columns 1 to 4 and the image 3 to the end. We use -1 to set this although you could set it to 5 in this case. 
 
 <figure>
-      {% image "../../public/img/css-grid-layouts-desktop.png", "The intended grid layout for desktop view" %}
+      {% image "css-grid-layouts-desktop.png", "The intended grid layout for desktop view", '(min-width: 600px) 50vw, 100vw' %}
    <figcaption>The intended grid layout for desktop view</figcaption>
 </figure>
 
