@@ -16,7 +16,11 @@ module.exports = function(eleventyConfig) {
 
 	// Returns a collection of meetings in reverse date order
 	eleventyConfig.addCollection('blogs', collection => {
-		return [...collection.getFilteredByGlob('./content/blog/*.md')].reverse();
+		const allBlogs = [...collection.getFilteredByGlob('./content/blog/*.md')].reverse();
+		// Exclude the latest entry
+		const blogsWithoutLatest = allBlogs.slice(1);
+
+		return blogsWithoutLatest;
 	});
 
 	// Returns a collection of meetings in reverse date order
@@ -35,6 +39,19 @@ module.exports = function(eleventyConfig) {
 
 		// Return only the first item (latest meeting)
 		return sortedCaseStudy.slice(0, 1);
+	});
+
+	// Returns the latest blog
+	eleventyConfig.addCollection('latestBlog', collection => {
+		// Sort the collection in descending order based on the 'date' attribute
+		const sortedBlog = [...collection.getFilteredByGlob('./content/blog/*.md')].sort((a, b) => {
+			const dateA = new Date(a.data.date);
+			const dateB = new Date(b.data.date);
+			return dateB - dateA;
+		});
+
+		// Return only the first item (latest meeting)
+		return sortedBlog.slice(0, 1);
 	});
 
 

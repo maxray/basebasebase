@@ -1,19 +1,26 @@
 footer {
     position: sticky;
     top: 100vh;
-    background-color: var(--black);
+    background-color: var(--themeColor);
     color: var(--white);
-    margin-top:var(--space-2xl);
+    margin-top:var(--space-l);
     font-size: var(--font-size-small);
-    padding: var(--space-2xl);
+    padding: var(--space-l);
     display: flex;
     align-items: center;
-    gap: var(--spacing);
+    gap: var(--space-s);
+    justify-content: space-between;
 
     svg {
         width: 10rem;
         .st0 {
                 fill: var(--white);
             }
+    }
+
+    .style-switcher {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2xs);
     }
 }

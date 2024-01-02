@@ -28,6 +28,29 @@
   .strike:hover {
     color: #ffffff;
   }
+
+.socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--space-s);
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    gap: var(--space-xs);
+
+    img {
+      max-width: none;/* antialiasing */
+        outline: 1px solid transparent;
+        -webkit-backface-visibility: hidden;
+        // transform: translateZ(0);
+        will-change: transform;
+        -webkit-perspective: 1000;
+      ;
+    }
+  }
+}
 }
 
 
@@ -40,6 +63,11 @@
         box-shadow: var(--box-shadow);
     }
 
+    .calling-card--bespoke  {
+      transform: rotate(2deg);
+      
+    }
+
     .calling-card:before {
       background-image: url(/img/Paperclip.svg);
       content: " ";
@@ -49,24 +77,14 @@
       left: 21px;
       top: -28px;
       transform: rotate(99deg);
+      /* antialiasing */
+        outline: 1px solid transparent;
+        -webkit-backface-visibility: hidden;
+        // transform: translateZ(0);
+        will-change: transform;
+        -webkit-perspective: 1000;
     }
 
-    .socials {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: var(--space-s);
-      flex-wrap: wrap;
-
-      li {
-        display: flex;
-        gap: var(--space-xs);
-
-        img {
-          max-width: none;;
-        }
-      }
-    }
-
+    
 
 }

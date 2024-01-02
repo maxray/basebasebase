@@ -1,5 +1,6 @@
 ---
 layout: layouts/default.njk
+callingText: Looking to do something like this?
 ---
 <div class="c-masthead">
 	<div class="left flow">
@@ -25,6 +26,8 @@ layout: layouts/default.njk
 	<blockquote>{{ client_notes }}<blockquote>
 	<cite>{{ client_cite }}</cite>
 </div>
+
+{% include  "partials/calling-card.html" %}
 
 
 {%- if collections.posts %}

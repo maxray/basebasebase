@@ -15,7 +15,7 @@
   	</figure>
 			<div class="flow ">
 				<h3 class="title">{{ post.data.title  }}</h3>
-				<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+			<div class="post-meta"><img src="/img/{{post.data.categories}}.svg" width="35" height="35" alt="{{categories}}" />  <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></div>
 				<p>{{ post.data.intro  }}</p>
 				<a href="{{ post.url }}" class="button">Read Post</a>
 			</div>

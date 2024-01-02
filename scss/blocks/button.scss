@@ -1,19 +1,31 @@
 // Buttons
 
-.button {
+.button , button {
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 1.2rem;
   transition: all 0.3s ease-in;
   display: inline-block;
-  padding: var(--space-2xs)var(--space-s) var(--space-2xs) var(--space-2xs);
-  border-left: solid 1rem var(--themeColor);
+  padding: var(--space-2xs) var(--space-s) var(--space-2xs) var(--space-2xs);
+  border-left: solid var(--space-xs) var(--themeColor);
   background-color: color-mix(in srgb, var(--themeColor) 10%, transparent);
   text-decoration: none;
   display: inline-block;
+  box-shadow: var(--box-shadow);
+  color: var(--black);
   // Make sure hover state trumps all variants with a good ol’ important
-  // &:hover {
-  //   background: var(--khaki) !important;
-  //   color: var(--white) !important;}
+  &:hover {
+    transform:translateX(3px);
+  }
+
+}
+
+.c-masthead {
+
+  .button {
+      box-shadow: 0px 0px 10px var(--black);
+      border-left: solid 1rem var(--black);
+      background-color: color-mix(in srgb, var(--themeColor) 75%, var(--white));
+    }
 
 }

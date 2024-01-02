@@ -5,10 +5,30 @@ eleventyNavigation:
   order: 2
 theme: orange
 ---
-<h1>Work and Play</h1>
+{% for item in collections.latestBlog %}
+<div class="c-masthead">
+	<div class="left flow">
+	<h1>{{ item.data.title  }}</h1>
+	<p>{{ item.data.intro  }}</p>
+  <a href="{{ item.url }}" class="button">Read Post</a>
+	</div>
+	<div class="right">
+{%- if item.data.thumbnail_image %}
+<figure class="polaroid">
+{% set img = item.data.thumbnail_image %}
+	{% image img, item.data.title ,  '(min-width: 600px) 50vw, 100vw'  %}
+	<figcaption>{{ item.data.title }}</figcaption>
+</figure>
+{%- endif %}
+	</div>
+</div>
+{% endfor %}
 
+<div class="post-content flow">
+
+<div id="accordionGroup" class="accordion">
 {% set currentYear = 0 %}
-  {% set yearsToShow = 2 %}
+  {% set yearsToShow = 15 %}
   {% set displayedYears = [] %}
 
   {% for post in collections.blogs %}
@@ -16,22 +36,72 @@ theme: orange
     {% if yearsToShow != 0 %}
     {% if postYear != currentYear %}
       {% if currentYear != 0 %}
-        </ol>
+        </ol> 
+    </div>
+  </div>
         {% set displayedYears = displayedYears | union([currentYear]) %}
         {% if displayedYears | length >= yearsToShow %}
           {% set yearsToShow = 0 %}
         {% endif %}
       {% endif %}
 
-      <h2>{{ postYear }}</h2>
-      <ol class="alt-" data-role="downloads">
+      <h3>
+{% if currentYear != 0 %}
+<button type="button"
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="sect{{ postYear }}"
+            id="accordion{{ postYear }}id">
+      <span class="accordion-title">
+        {{ postYear }} 
+        <span class="accordion-icon"></span>
+      </span>
+    </button>
+
+{% else %}
+<button type="button"
+            aria-expanded="true"
+            class="accordion-trigger"
+            aria-controls="sect{{ postYear }}"
+            id="accordion{{ postYear }}id">
+      <span class="accordion-title">
+        {{ postYear }} 
+        <span class="accordion-icon"></span>
+      </span>
+    </button>
+{% endif %}
+</h3>
+{% if currentYear != 0 %}
+<div id="sect{{ postYear }}"
+    role="region"
+    aria-labelledby="accordion{{ postYear }}id"
+    class="accordion-panel"
+    hidden="">
+<div>
+{% else %}
+<div id="sect{{ postYear }}"
+    role="region"
+    aria-labelledby="accordion{{ postYear }}id"
+    class="accordion-panel"
+    >
+<div>
+{% endif %}
+
+
+      <ol class="flow post-content-block {% if currentYear == 0 %}latest{% endif %}" >
     {% endif %}
 
-    <li><a href="{{ post.url }}"><span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - <img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="Category Icon" /> {{ post.data.title }}</a>
+    <li class="flow post-content-item"><a href="{{ post.url }}" class="button post-content-link"><img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="{{post.data.categories}}" /> <span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - {{ post.data.title }}</a>
+    <p>{{ post.data.intro }}</p>
     </li>
 
     {% set currentYear = postYear %}
     {% endif %}
   {% endfor %}
 
-</ol>
+</ol> 
+    </div>
+  </div>
+
+</div>
+</div>

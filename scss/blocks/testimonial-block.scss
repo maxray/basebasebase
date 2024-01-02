@@ -1,9 +1,74 @@
-.testimonial-block {
-    blockquote {
-        font-size: 2.5rem;
-        line-height: 1;
-        border-bottom: solid 1px var(--gold);
-        padding-bottom: var(--space-s);
-        margin-bottom: var(--space-s);
+// .testimonial-block {
+//     blockquote {
+//         font-size: 2.5rem;
+//         line-height: 1;
+//         border-bottom: solid 1px var(--gold);
+//         padding-bottom: var(--space-s);
+//         margin-bottom: var(--space-s);
+//     }
+// }
+
+.c-testimonial {
+    display: flex;
+    margin-bottom: var(--space-s);
+    gap: var(--space-xs);
+
+@media only screen and (max-width: 48rem) {
+    flex-direction: column-reverse;
+}
+
+
+
+    .c-testimonial-quote {
+        
+        @media only screen and (min-width: 48rem) {
+            width: 70%;
+        }
+        blockquote {
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+
+        cite {
+            font-family: 'Bitter', serif;
+            font-weight: 700;
+            font-size: 1rem;
+            display: inline-block;
+            margin-top: var(--space-s);
+        }
     }
+
+    .c-testimonial-details {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+
+        figure {
+position: relative;
+
+            @media only screen and (max-width: 48rem) {
+                margin: auto;
+            }
+
+&:before {
+    background-image: url(/img/Paperclip.svg);
+    content: " ";
+    position: absolute;
+    width: 32px;
+    height: 118px;
+    right: -6px;
+    top: -18px;
+    transform: rotate(245deg);
+    /* antialiasing */
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    // transform: translateZ(0);
+    will-change: transform;
+    -webkit-perspective: 1000;
+}
+        }
+    }
+
 }

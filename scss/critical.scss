@@ -37,12 +37,12 @@ body {
       
         .left {
             grid-area: 1 / 1 / 2 / 5;
-            padding: 0 var(--space-m);
+            padding: 0 0 0  var(--space-m);
           }
 
         .left-short {
           grid-area: 1 / 1 / 2 / 4;
-          padding: 0 var(--space-m);
+          padding: 0 0 0 var(--space-m);
         }
         
         .right {
@@ -84,8 +84,8 @@ body {
     margin-bottom: var(--space-xs);
   }
 
-  .title {
-    border-left: solid var(--space-s) var(--themeColor);
+  .title , .post-content h2 .post-content h3 .post-content h4{
+    border-left: solid var(--space-xs) var(--themeColor);
     padding-left: var(--space-s);
   }
 
@@ -97,13 +97,14 @@ body {
     figcaption {
       font-family: 'Caveat', cursive;
       line-height: 0.7;
+      margin-top: var(--space-2xs);
     }
   }
 
 // Links {
 
 a {
-  color: var(--black);
+  color: var(--themeColor);
 }
 
 
@@ -136,8 +137,10 @@ a {
 /* FORMS */
 
 form {
-  margin: 0;
-  padding: 0;
+  margin: var(--space-m) auto;
+  padding: var(--space-s);
+  max-width: 60ch;
+
 }
 
 label {
@@ -148,7 +151,7 @@ label {
 [data-role="row"] {
   margin: 0 0 var(--spacing-s);
 }
-
+[type="name"],
 [type="email"],
 [type="tel"],
 [type="text"],
@@ -159,15 +162,15 @@ textarea {
   margin: 0;
   padding: var(--spacing-s);
   width: 100%;
-  // background-color: var(--color-input-background);
-  // border-color: var(--color-input-border);
-  // border-width: var(--border-width-r);
+  background-color: var(--themeColor);
+  border-color: var(--themeColor);
+  border-width: var(--space-xs);
   border-style: solid;
   border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
-  // transition: all var(--animate-duration-faster) var(--animate-function);
-  // caret-color: var(--color-accent);
+  transition: all var(--animate-duration-faster) var(--animate-function);
+  caret-color: var(--themeColor);
 }
 
 textarea {
@@ -175,20 +178,20 @@ textarea {
   resize: vertical;
   transition: min-height .5s ease-in-out;
 }
-
+[type="name"]:focus,
 [type="email"]:focus,
 [type="tel"]:focus,
 [type="text"]:focus,
 textarea:focus {
   outline: 0;
-  // border-color: var(--color-border);
-  // accent-color: var(--color-accent);
+  border-color: var(--themeColor);
+  accent-color: var(--themeColor);
 }
 
 input[type]::placeholder {
   // font-family: var(--font-family-default);
-  // font-size: var(--font-size-xxs);
-  // color: var(--color-input-placeholder);
+  font-size: var(--step--2);
+  color: var(--themeColor);
 }
 
 input:focus::-webkit-input-placeholder {
@@ -215,6 +218,7 @@ blockquote > cite {
 @import 'blocks/profile-pic';
 @import 'blocks/switch';
 @import 'blocks/header';
+@import 'blocks/c-accordion';
 @import 'blocks/c-card';
 @import 'blocks/c-masthead';
 @import 'blocks/paper';
@@ -228,7 +232,7 @@ blockquote > cite {
 // @import 'blocks/telephone-cta';
 // @import 'blocks/services-list';
 // @import 'blocks/slide-menu';
-// @import 'blocks/testimonial-block';
+@import 'blocks/testimonial-block';
 // @import 'blocks/timeline';
 
 // UTILITIES

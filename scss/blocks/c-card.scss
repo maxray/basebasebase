@@ -5,13 +5,31 @@ flex-direction: column;
 margin-left: var(--flow-space);
 margin-right: var(--flow-space);
 
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--step--2);
+
+    img {
+      display: inline;
+    }
+
+  }
+
 figure {
-  max-width: 250px;
+  width: 100%;
   align-self: flex-start;
   background: var(--white);
   padding: var(--space-2xs);
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
-  transform: rotate(2deg);
+
+
+  @media only screen and (min-width: 37.5rem) {
+    max-width: 250px;
+  }
+
+
   img {
     max-width: 100%;
     aspect-ratio: 1/1;
@@ -22,16 +40,16 @@ figure {
     font-family: 'Caveat', cursive;
     line-height: 0.7;
     padding: 0.5rem 0 0 0;
-    transform: rotate(-1deg);
+
   }
 }
 
-@media only screen and (min-width: 30rem) and (max-width: 48rem) {
-  flex-direction: row;
-}
+// @media only screen and (min-width: 40rem) and (max-width: 60rem) {
+//   flex-direction: row;
+// }
 
 
-@media only screen and (min-width: 75rem) {
+@media only screen and (min-width: 40rem) {
   flex-direction: row;
 }
 
@@ -40,11 +58,22 @@ figure {
 &--casestudy {
   --linkColor: var(--green);
   --themeColor: var(--green);
-
+  figure {
+    
+    width: 100%;
+    @media only screen and (min-width: 37.5rem) {
+      max-width: 350px;
+      width: 40%;
+    }
+  }
   .flow {
     --flow-space: var(--space-xs);
+@media only screen and (min-width: 37.5rem) {
+width: 50%;
+}
   }
 }
+
 
 // Post Card 
 
@@ -53,20 +82,32 @@ figure {
   --linkColor: var(--orange);
   --themeColor: var(--orange);
 
+  figure {
+      
+      @media only screen and (min-width: 37.5rem) {
+        max-width: 200px;
+        min-width: 130px;
+width: 25%;
+      }
+    }
+
   .flow {
     --flow-space: var(--space-xs);
+@media only screen and (min-width: 37.5rem) {
+    width: 75%;
+}
   }
 
+@media only screen and (min-width: 37.5rem) {
   flex-direction: row;
+}
 
-  figure {
 
-    transform: rotate(-2deg);
-
-  }
 
   .flow {
+@media only screen and (min-width: 37.5rem) {
     width: 75%;
+}
   }
 }
 }
@@ -77,5 +118,29 @@ figure {
   .postlist-item .c-card {
   --flow-space: var(--space-s);
   }
+
+}
+
+[data-jauntyness="jaunty"] {
+  .c-card--post {
+    figure {
+    
+        transform: rotate(-2deg);
+    
+      }
+  }
+
+ .c-card {
+   figure {
+
+     transform: rotate(2deg);
+
+   }
+
+    figcaption {
+        transform: rotate(-1deg);
+
+    }
+ }
 
 }

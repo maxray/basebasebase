@@ -12,9 +12,7 @@ client_cite: Naomi Stander - (Chair of York Supplies Community org)
 
 ---
 
-## The Client:
-
-You may have heard of York Supplies. They have been in the news. Trading in the vibrant Birmingham suburb of Kings Heath since 1947, the very special hardware store and garden centre faced closure upon the retirement of the current owners.
+## The very special hardware store and garden centre faced closure upon the retirement of the current owners.
 
 The customers stepped in and formed a co-op to save this unusual and much loved shop. They’ve raised the investment to buy the business and it will now be run by and for the community.
 

@@ -4,7 +4,7 @@ layout: layouts/default.njk
 <div class="c-masthead">
 	<div class="left flow">
 	<h1>{{ title }}</h1>
-	<div class="c-masthead-meta"><img src="/img/{{categories}}.svg" width="35" height="35" alt="Category Icon" />  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></div>
+	<div class="c-masthead-meta"><img src="/img/{{categories}}.svg" width="35" height="35" alt="{{categories}}" />  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></div>
 	<p>{{ intro  }}</p>
 	</div>
 	<div class="right">

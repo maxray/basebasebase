@@ -1,6 +1,9 @@
 .c-masthead {
     background-color: var(--themeColor);
-    padding: var(--space-m);
+    padding: var(--space-s);
+    @media only screen and (min-width: 48rem) {
+      padding: var(--space-m);
+    }
     box-shadow: var(--box-shadow);
 
     @media only screen and (min-width: 48rem) {
@@ -13,6 +16,9 @@
     grid-column-gap: var(--space-s);
     grid-row-gap: var(--space-s);
   
+    }
+    @media only screen and (max-width: 48rem) {
+        margin-bottom: var(--space-s);
     }
 
 
@@ -32,7 +38,7 @@
           top: -15vw;
         }
 
-        @media only screen and (min-width: 70ch) {
+        @media only screen and (min-width: 80rem) {
           position: fixed;
           top: -5vw;
         }
@@ -43,13 +49,6 @@
 
 
 
-  @media only screen and (max-width: 48rem) {
-
-    .left,
-    .right {
-      padding: var(--space-s);
-    }
-  }
 
   &-meta {
     display: flex;
@@ -60,4 +59,9 @@
       }
 
   }
+
+
+
+
+
 }

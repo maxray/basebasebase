@@ -9,8 +9,10 @@
     --yellow: #d7fb65;
     --paper: #efefed;
     --paper-line: #b3d5f2;
+    --grey: #cccccc;
+    --shadow-color: var(--grey);
     
-    --box-shadow: 0px 0px 10px #cccccc;
+    --box-shadow: 0px 0px 10px var(--shadow-color);
 
     // --spacing-small: .5rem;
     // --spacing: 1rem;
