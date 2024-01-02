@@ -21,6 +21,12 @@
         margin-bottom: var(--space-s);
     }
 
+@media only screen and (max-width: 37.5rem) {
+display: flex;
+flex-direction: column-reverse;
+
+}
+
 
     .left {
       grid-area: 1 / 1 / 2 / 6;
@@ -40,7 +46,7 @@
 
         @media only screen and (min-width: 80rem) {
           position: fixed;
-          top: -5vw;
+          top: 0;
         }
 
       }

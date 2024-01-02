@@ -96,7 +96,7 @@
                     }
 
                     &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
 
                 }
@@ -137,7 +137,11 @@ li {
     }
 
     a[aria-current="page"] , a:hover {
+        @media only screen and (min-width: 37.5rem) {
         padding-top: var(--space-s);
+        }
+
+        text-decoration: underline;
     }
     }
 }

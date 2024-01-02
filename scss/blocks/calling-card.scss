@@ -6,9 +6,15 @@
   grid-column: 1 / span 4;
   -ms-grid-row: 5;
   grid-row: 5;
-  padding: 3rem 2rem 1rem 2rem;
+  padding: 3rem 2rem 3rem 2rem;
   color: var(--black);
   position: relative;
+  align-self: center;
+
+h2 {
+max-width: 60ch;
+margin: auto;
+}
 
   img {
     width: to-rem(25px);

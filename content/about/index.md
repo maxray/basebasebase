@@ -11,7 +11,7 @@ I have years of experience within the design industry. I design and build websit
 
 My approach is very much collaborative and I like to work closely with my clients to make sure I find a solution that not only fits the brief but the budget. I can work remotely or on site depending on the needs of a project.
 
-I'm Sush. I design and build responsive websites, primarily in Wordpress and Jekyll. Need some help on a project? Get in touch
+I design and build responsive websites, primarily in Wordpress and Eleventy. Need some help on a project? Get in touch.
 
 <div class="calling-card">
 <h2>Skills / abilities</h2>

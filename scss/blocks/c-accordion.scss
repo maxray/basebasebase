@@ -21,7 +21,7 @@
   background: none;
   color: hsl(0deg 0% 13%);
   display: block;
-  // font-size: 1rem;
+  font-size: var(--step-1);
   // font-weight: normal;
   margin: 0;
   // padding: 1em 1.5em;
@@ -41,15 +41,15 @@
   outline: 4px solid transparent;
 }
 
-.accordion>*:first-child .accordion-trigger,
-.accordion>*:first-child {
-  border-radius: 5px 5px 0 0;
-}
+// .accordion>*:first-child .accordion-trigger,
+// .accordion>*:first-child {
+//   border-radius: 5px 5px 0 0;
+// }
 
-.accordion>*:last-child .accordion-trigger,
-.accordion>*:last-child {
-  border-radius: 0 0 5px 5px;
-}
+// .accordion>*:last-child .accordion-trigger,
+// .accordion>*:last-child {
+//   border-radius: 0 0 5px 5px;
+// }
 
 button {
   border-style: none;
@@ -93,7 +93,7 @@ button {
 
 .accordion-panel {
   margin: 0;
-  padding: 1em 1.5em;
+  // padding: 1em 1.5em;
 }
 
 /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */

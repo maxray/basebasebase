@@ -26,8 +26,10 @@ figure {
 
 
   @media only screen and (min-width: 37.5rem) {
-    max-width: 250px;
+    max-width: 40%;
   }
+
+
 
 
   img {
@@ -41,6 +43,12 @@ figure {
     line-height: 0.7;
     padding: 0.5rem 0 0 0;
 
+  }
+}
+
+.flow {
+  @media only screen and (min-width: 37.5rem) {
+    width: 60%;
   }
 }
 
@@ -68,9 +76,9 @@ figure {
   }
   .flow {
     --flow-space: var(--space-xs);
-@media only screen and (min-width: 37.5rem) {
-width: 50%;
-}
+    @media only screen and (min-width: 37.5rem) {
+      width: 60%;
+    }
   }
 }
 
@@ -93,9 +101,9 @@ width: 25%;
 
   .flow {
     --flow-space: var(--space-xs);
-@media only screen and (min-width: 37.5rem) {
-    width: 75%;
-}
+    @media only screen and (min-width: 37.5rem) {
+        width: 75%;
+    }
   }
 
 @media only screen and (min-width: 37.5rem) {
