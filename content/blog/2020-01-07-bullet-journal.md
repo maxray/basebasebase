@@ -1,19 +1,17 @@
 ---
 title: A new process for the New Year
 date: 2020-01-07 21:29:00 Z
+intro: >
+  After trying and failing to keep up with 'to do' lists using digital methods I have turned to analogue!
+thumbnail_image: "bullet-journals.jpg"
 categories:
 - Work
 
 ---
 
-<figure>
-{% image 'bullet-journals.jpg', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
-   <figcaption>A new process for the New Year</figcaption>
-</figure>
+## Those who know me will be fully aware that I have a 'thing' for notepads. Moleskin, Rhodia, you name it if it has a nice texture and even better it is dot grid **I AM IN!** :)  
 
-### After trying and failing to keep up with 'to do' lists using digital methods I have turned to analogue!
-
-Those who know me will be fully aware that I have a 'thing' for notepads. Moleskin, Rhodia, you name it if it has a nice texture and even better it is dot grid **I AM IN!** :)  My use of notepads however is a bit lame. I tend to write linear notes during the day that have little to no value 24hours after writing them so, despite continuing to do this I have always tried to use digital tools to manage my 'to do' lists properly. 
+My use of notepads however is a bit lame. I tend to write linear notes during the day that have little to no value 24hours after writing them so, despite continuing to do this I have always tried to use digital tools to manage my 'to do' lists properly. 
 
 I was put on to the idea of Bullet Journaling running up to Christmas and a few YouTube videos later my eyes were opened to a whole world of epic journalling. 
 

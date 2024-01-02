@@ -72,18 +72,32 @@ body {
 // Headings
 
   h1 {
-    font-size:var(--step-5);
+    font-size:var(--step-4);
     line-height: 1;
+    margin-bottom: var(--space-xs); 
   }
 
   h1,h2,h3, h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--space-xs);
   }
 
   .title {
     border-left: solid var(--space-s) var(--themeColor);
     padding-left: var(--space-s);
+  }
+
+  p {
+    margin-bottom: var(--space-xs);
+  }
+
+  figure {
+    figcaption {
+      font-family: 'Caveat', cursive;
+      line-height: 0.7;
+    }
   }
 
 // Links {
@@ -110,12 +124,12 @@ a {
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  border: 1px solid var(--magenta);
+  border: 1px solid var(--themeColor);
   border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--magenta);
+  background-color: var(--themeColor);
   border-radius: 0.25rem;
 }
 
@@ -187,12 +201,25 @@ input:focus::placeholder {
   opacity: 0;
 }
 
+blockquote > cite {
+  border-top: solid 5px var(--green);
+  padding-top: var(--space-2xs);
+  margin-top: var(--space-xs);
+  display: inline-block;
+}
+
+
+
 // BLOCKS
 @import 'blocks/calling-card';
 @import 'blocks/profile-pic';
 @import 'blocks/switch';
 @import 'blocks/header';
 @import 'blocks/c-card';
+@import 'blocks/c-masthead';
+@import 'blocks/paper';
+@import 'blocks/torn-paper';
+@import 'blocks/polaroid';
 @import 'blocks/button';
 // @import 'blocks/cta';
 @import 'blocks/footer';

@@ -8,16 +8,8 @@ categories:
   - Play
 ---
 
-<figure>
-      {% image "covid-strikes.jpeg", "Covid comes a knocking" , '(min-width: 600px) 50vw, 100vw'%}
-   <figcaption>Covid comes a knocking</figcaption>
-</figure>
-
-### Felt we had done pretty well as a family to get so far through the pandemic but on the eve of my booster jab Covid had other ideas!
-
 I would say "what are the chances!?" but if the last 2 years has taught us anything it is that anything can happen... and so begins family isolation for the next 10 days. At least for now it seems like a good thing to document, both the virus and how/if we can survive without killing one another! :D
 
-<!--more-->
 
 #### Well that came out of nowhere - Thursday 9th - Day -1
 

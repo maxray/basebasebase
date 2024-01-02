@@ -1,0 +1,25 @@
+// Polaroid Style
+
+.polaroid {
+      background: var(--white);
+      padding: var(--space-s);
+      box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  
+      img {
+        max-width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+  
+      figcaption {
+        font-family: 'Caveat', cursive;
+      }
+}
+
+[data-jauntyness="jaunty"] {
+
+.polaroid {
+    transform: rotate(2deg);
+  }
+
+}

@@ -1,18 +1,14 @@
 ---
 title: Let me be your glue
 date: 2020-03-04 21:29:00 Z
+intro:  >
+   This post is partly me wondering why I don’t seem to fit in, a slight moan at how unrealistic job adverts seem to be and a wish for simpler times!
+thumbnail_image: "glue.png"
 categories:
 - Work
 ---
 
-<figure>
-{% image 'glue.png', 'Alt Text', '(min-width: 600px) 50vw, 100vw' %}
-   <figcaption>Let me be your glue</figcaption>
-</figure>
-
-### This post is partly me wondering why I don’t seem to fit in, a slight moan at how unrealistic job adverts seem to be and a wish for simpler times!
-
-As I ponder what is next as one of my main retained client contracts comes to an end I have been trying to work out what I am.
+## As I ponder what is next as one of my main retained client contracts comes to an end I have been trying to work out what I am.
 
 > TL:DR - Job descriptions seem unreasonable and there are none that suit my skills!
 

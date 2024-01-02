@@ -8,10 +8,9 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addNunjucksAsyncShortcode('image', async function (src, alt, sizes) {
 		const inputPath = `public/img/${src}`;  // Adjust the path to match your folder structure
-
 		let metadata = await Image(inputPath, {
 			widths: [300, 600, 900],
-			formats: ['jpeg', 'png'],
+			formats: ['jpeg', 'png', 'webp'],
 			outputDir: '_site/img', // Specify the output folder here
 			inputDir: 'public/img',   // Specify the central input folder here
 		});

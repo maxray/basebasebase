@@ -1,0 +1,35 @@
+// Paper sheet
+
+.paper {
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  background: linear-gradient(to bottom,
+    var(--paper-line) 1px,
+    var(--paper) 1px,
+    var(--paper) 15px);
+  background-size: 100% 30px;
+  padding: var(--space-s)var(--space-s)var(--space-l)var(--space-s) ;
+  margin-top: 60px;
+  border-image-slice:
+    50 0 25 0;
+  border-image-width:
+    50px 0px 25px 0px;
+  border-image-outset:
+    50px 0px 0px 0px;
+  border-image-repeat:
+    repeat space;
+  border-image-source:
+    url("/img/paper-top.svg");
+  border-style:
+    solid;
+}
+
+[data-jauntyness="jaunty"] {
+
+  .paper {
+    transform: rotate(-2deg);
+    box-shadow: var(--box-shadow);
+  }
+
+}

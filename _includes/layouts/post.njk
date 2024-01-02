@@ -1,32 +1,23 @@
 ---
 layout: layouts/default.njk
 ---
-<div class="post-header split">
-	<div>
+<div class="c-masthead">
+	<div class="left flow">
 	<h1>{{ title }}</h1>
-	<ul class="post-metadata">
-		<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-		{%- for tag in tags | filterTagList %}
-		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-		{%- endfor %}
-	</ul>
+	<div class="c-masthead-meta"><img src="/img/{{categories}}.svg" width="35" height="35" alt="Category Icon" />  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></div>
+	<p>{{ intro  }}</p>
 	</div>
-	<div>
+	<div class="right">
 {%- if thumbnail_image %}
-
-<figure>
-
+<figure class="polaroid">
 {% set img = thumbnail_image %}
-{{ img }}
-    {% image img, title ,  '(min-width: 600px) 50vw, 100vw'  %}
-    <figcaption>{{ title }}</figcaption>
-  </figure>
-
+	{% image img, title ,  '(min-width: 600px) 50vw, 100vw'  %}
+	<figcaption>{{ title }}</figcaption>
+</figure>
 {%- endif %}
 	</div>
 </div>
-<div class="post-content">
+<div class="post-content flow">
 {{ content | safe }}
 
 {%- if collections.posts %}

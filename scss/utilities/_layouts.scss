@@ -36,3 +36,9 @@ display: grid;
   grid-area: 1 / 1 / 2 / 9;
 }
 
+
+.post-content {
+  padding: 0 var(--space-s);
+  max-width: 60ch;
+}
+

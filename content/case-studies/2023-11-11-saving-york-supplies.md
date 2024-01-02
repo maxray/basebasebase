@@ -6,6 +6,10 @@ categories:
 thumbnail_image: "about2.png"
 intro: >
   You may have heard of York Supplies. They have been in the news. Trading in the vibrant Birmingham suburb of Kings Heath since 1947, our very special hardware store and garden centre faced closure upon the retirement of the current owners. This is how we saved it. 
+client_notes: >
+  blip bloop bloop dojif sdiopfjsdoopsdjfpsdofjopsdfjpsdofjksdpfjksdopfksdopfjkpsdfopsdkfposdkfopsdfk opsdfksdfopjkdspfjsdpofsdpofjksdfjk sdpofjk sdfjkpsd ofpdosf jksdopfj sdpof jk
+client_cite: Naomi Stander - (Chair of York Supplies Community org)
+
 ---
 
 ## The Client:
@@ -45,6 +49,3 @@ Website
 Email marketing
 Share application tool
 
-###  Client Notes:
-
-“ blip bloop bloop’” 

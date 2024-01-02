@@ -7,5 +7,22 @@ layout: layouts/base.njk
 </div>
 <div class="right-long flow">
 {% set postslist = collections.caseStudies %}
-{% include "partials/postslist.njk" %}
+<ol reversed class="flow  postlist">
+{% for post in postslist %}
+	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<div class="c-card">
+			<figure>
+				{% set img = post.data.thumbnail_image %}
+				{% image img, post.data.title, '(min-width: 600px) 50vw, 100vw'  %}
+				<figcaption>{{ post.data.title }}</figcaption>
+			</figure>
+			<div class="flow ">
+				<h3 class="title">{{ post.data.title  }}</h3>
+				<p>{{ post.data.intro  }}</p>
+				<a href="{{ post.url }}" class="button">Read Post</a>
+			</div>
+		</div>
+	</li>
+{% endfor %}
+</ol>
 </div>
