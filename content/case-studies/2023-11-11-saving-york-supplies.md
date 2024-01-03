@@ -7,8 +7,10 @@ thumbnail_image: "york-supplies-banner.jpg"
 intro: >
   You may have heard of York Supplies. They have been in the news. Trading in the vibrant Birmingham suburb of Kings Heath since 1947, our very special hardware store and garden centre faced closure upon the retirement of the current owners. This is how we saved it. 
 client_notes: >
-  blip bloop bloop dojif sdiopfjsdoopsdjfpsdofjopsdfjpsdofjksdpfjksdopfksdopfjkpsdfopsdkfposdkfopsdfk opsdfksdfopjkdspfjsdpofsdpofjksdfjk sdpofjk sdfjkpsd ofpdosf jksdopfj sdpof jk
-client_cite: Naomi Stander - (Chair of York Supplies Community org)
+  Sush Kelly’s work was instrumental in the success of our community buyout project. He has built our website, including application forms, and designed strong logos, clear brand identities and attractive professional documentation. And he did all this at speed  and with endless good humour and where necessary grace under fire. 
+  <br><br>
+  He played a key role in communicating with local people and turning them into investors, and we are enormously grateful. We look forward to continuing to work with Sush in the long term.
+client_cite: Naomi Stander - (Chair of York Supplies Community Co-op)
 callingText: Got an idea you need to get off the ground quickly?
 
 ---

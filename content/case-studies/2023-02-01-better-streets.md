@@ -1,6 +1,6 @@
 ---
 title: "Better Streets for Birmingham"
-intro: "Safety on our roads and pavements shouldnot be something we have to campaign for, saldy though we do. "
+intro: "Safety on our roads and pavements should not be something we have to campaign for, sadly though we do. "
 date: "2023-02-01"
 categories:
   - Work

@@ -23,7 +23,7 @@ callingText: Looking to do something like this?
 {{ content | safe }}
 <div class="paper">
 	<h3>What the client said:</h3>
-	<blockquote>{{ client_notes }}<blockquote>
+	<blockquote>{{ client_notes | safe }}<blockquote>
 	<cite>{{ client_cite }}</cite>
 </div>
 

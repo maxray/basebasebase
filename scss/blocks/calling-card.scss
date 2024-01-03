@@ -42,7 +42,7 @@ margin: auto;
   gap: var(--space-s);
   flex-wrap: wrap;
 
-  li {
+  li a{
     display: flex;
     gap: var(--space-xs);
 

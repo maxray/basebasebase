@@ -1,6 +1,8 @@
 .c-masthead {
     background-color: var(--themeColor);
     padding: var(--space-s);
+
+
     @media only screen and (min-width: 48rem) {
       padding: var(--space-m);
     }
