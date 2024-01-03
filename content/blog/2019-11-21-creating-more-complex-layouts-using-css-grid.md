@@ -1,6 +1,7 @@
 ---
 title: Creating complex layouts using CSS Grid
 date: 2019-11-21 21:29:00 Z
+thumbnail_image: "css-grid-layouts-header.png"
 categories:
 - Work
 

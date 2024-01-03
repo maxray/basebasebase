@@ -24,6 +24,12 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Returns a collection of meetings in reverse date order
+	eleventyConfig.addCollection('latestBlogs', collection => {
+		const allBlogs = [...collection.getFilteredByGlob('./content/blog/*.md')].reverse();
+		return allBlogs.slice(0, 3); // Select the first three elements (latest posts)
+	});
+
+	// Returns a collection of meetings in reverse date order
 	eleventyConfig.addCollection('caseStudies', collection => {
 		return [...collection.getFilteredByGlob('./content/case-studies/*.md')].reverse();
 	});
