@@ -87,7 +87,17 @@ body {
   .title , .post-content h2 .post-content h3 .post-content h4{
     border-left: solid var(--space-xs) var(--themeColor);
     padding-left: var(--space-s);
+
+    &.green {
+      border-color: var(--green);
+    }
+    &.orange {
+      border-color: var(--orange);
+    }
+
   }
+
+
 
   p {
     margin-bottom: var(--space-xs);

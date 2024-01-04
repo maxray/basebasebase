@@ -9,7 +9,7 @@ theme: yellow
 <h1>It's good to talk!</h1>
 </div>
 <div class="calling-card">
-<h2>I currently have availability from Feb 2024 - if you are looking for some front-end cover, maybe have a big project on that needs an extra pair of hands or have a project that you need a little help on get in touch. </h2>
+<h2>I currently have availability from February 2024. Whether you need an extra set of hands for a big project, some cover in the studio or just a little help with something, don't hesitate to get in touch.</h2>
 </div>
 
 <form class="contact-form" name="contact-form" method="POST" data-netlify="true">
