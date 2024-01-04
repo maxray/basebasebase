@@ -67,9 +67,10 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-        .style-switcher {
-          display: flex;
-          align-items: center;
-          gap: var(--space-2xs);
-          flex-direction: column;
-        }
+.style-switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  flex-direction: column;
+  display:none;
+}

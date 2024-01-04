@@ -3,6 +3,7 @@
 .button , button {
   font-family: 'Caveat', cursive;
   font-weight: 700;
+  line-height: 1;
   font-size: 1.2rem;
   transition: all 0.3s ease-in;
   display: inline-block;
@@ -16,6 +17,11 @@
   // Make sure hover state trumps all variants with a good ol’ important
   &:hover {
     transform:translateX(3px);
+  }
+
+  &--long {
+
+  width: 100%;
   }
 
 }
