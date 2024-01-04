@@ -53,6 +53,10 @@ position: relative;
             }
 
 &:before {
+@media only screen and (max-width: 37.5rem) {
+        display:none;
+    }
+
     background-image: url(/img/Paperclip.svg);
     content: " ";
     position: absolute;

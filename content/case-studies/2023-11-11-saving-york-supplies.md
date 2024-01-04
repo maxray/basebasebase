@@ -6,6 +6,18 @@ categories:
 thumbnail_image: "york-supplies-banner.jpg"
 intro: >
   You may have heard of York Supplies. They have been in the news. Trading in the vibrant Birmingham suburb of Kings Heath since 1947, the very special hardware store and garden centre faced closure upon the retirement of the current owners. This is how we saved it. 
+collateral: >
+  <h3>Collateral used on the project: </h3>
+  <ul><li>Logo</li>
+  <li>Branding</li>
+  <li>Share offer docs</li>
+  <li>Business plan</li>
+  <li>Flyers</li>
+  <li>Pull up banners </li>
+  <li>Posters</li>
+  <li>Website</li>
+  <li>Email marketing</li>
+  <li>Share application tool </li></ul>
 client_notes: >
   Sush Kelly’s work was instrumental in the success of our community buyout project. He has built our website, including application forms, and designed strong logos, clear brand identities and attractive professional documentation. And he did all this at speed  and with endless good humour and where necessary grace under fire. 
   <br><br>
@@ -38,15 +50,5 @@ The people of Kings Heath were keen to get on board and in 6 weeks we hit our ta
 
 Upon realising this landmark moment - the first co op hardware store in England we revisited the temporary group logo to reimagine the York supplies brand based on parts of its glorious history and set it for a long and prosperous future on the high street. 
 
-### Collateral used on the project: 
-Logo
-Branding
-Share offer docs
-Business plan
-Flyers
-Pull up banners 
-Posters
-Website
-Email marketing
-Share application tool
+
 

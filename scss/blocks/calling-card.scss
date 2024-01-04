@@ -10,6 +10,9 @@
   color: var(--black);
   position: relative;
   align-self: center;
+  background-color: var(--yellow);
+
+
 
 h2 {
 max-width: 60ch;
@@ -21,7 +24,7 @@ margin: .25rem auto 1rem auto;
   }
 
 
-  background-color: var(--yellow);
+
 
   a {
     color: #2b2b2b;
@@ -71,7 +74,11 @@ margin: .25rem auto 1rem auto;
 
     .calling-card--bespoke  {
       transform: rotate(2deg);
-      
+    }
+
+    .calling-card--case-study {
+      transform: rotate(4deg);
+      background-color: var(--green);
     }
 
     .calling-card:before {

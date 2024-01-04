@@ -2,6 +2,13 @@
 title: "Better Streets for Birmingham"
 intro: "Safety on our roads and pavements should not be something we have to campaign for, sadly though we do. "
 date: "2023-02-01"
+collateral: >
+  <h3>Collateral used on the project: </h3>
+  <ul><li>Logo</li>
+  <li>Branding & downloadable assets</li>
+  <li>Flyers</li>
+  <li>Posters</li>
+  <li>Website</li>
 categories:
   - Work
 thumbnail_image: "bsfb-protest.jpg"
@@ -27,6 +34,16 @@ Versions of the logo for use on social media and the web quickly followed along 
 
 Sadly - despite all their efforts the deaths and serious injuries continue and after a really serious hit and run locally there was a huge outpouring of support leading to a mass demonstration and heightened media coverage. We created some placard posters and flyers to bring everyone together to converge and make our voices felt. 
 
+<figure class="torn-paper">
+    <img src="/img/metro2-1.svg"/>
+   <figcaption>Animated svg images used on the website</figcaption>
+</figure>
+
 As well as regular activations at the local markets and other suitable events Better Streets ran a red light campaign, using citizen science to log red light jumping. In September 2023, 32 Better Streets for Birmingham members from across the city volunteered to watch 21 different junctions for drivers running red lights. They collectively volunteered for 50 sessions, totalling a huge 44 hours and 56 minutes.
+
+<figure class="torn-paper">
+      {% image "bsfb-collateral-1.jpg", "Posters and Leaflets", '(min-width: 600px) 50vw, 100vw' %}
+   <figcaption>Posters and Leaflets</figcaption>
+</figure>
 
 A further ‘B Plate’ campaign followed with drivers signing a Better Drivers, better streets pledge with the option to have a special B plate to display their allegiance.
