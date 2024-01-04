@@ -27,6 +27,13 @@ body {
       --themeColor: var(--yellow);
     }
 
+&[data-theme='home'] {
+  main {
+  overflow-x: hidden;
+
+  }
+}
+
     main {
       @media only screen and (min-width: 48rem) {
         display: grid;
