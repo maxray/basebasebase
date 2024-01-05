@@ -34,7 +34,7 @@ Versions of the logo for use on social media and the web quickly followed along 
 
 Sadly - despite all their efforts the deaths and serious injuries continue and after a really serious hit and run locally there was a huge outpouring of support leading to a mass demonstration and heightened media coverage. We created some placard posters and flyers to bring everyone together to converge and make our voices felt. 
 
-<figure class="torn-paper">
+<figure class="simple-image">
     <img src="/img/metro2-1.svg"/>
    <figcaption>Animated svg images used on the website</figcaption>
 </figure>

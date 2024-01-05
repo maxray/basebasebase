@@ -1,5 +1,5 @@
 ---
-title: Pumkin carving time
+title: Pumpkin carving time
 date: 2022-10-31 21:29:00 Z
 intro: >
   Who doesn't love carving a pumpkin? 

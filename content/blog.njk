@@ -91,7 +91,7 @@ theme: orange
       <ol class="flow post-content-block {% if currentYear == 0 %}latest{% endif %}" >
     {% endif %}
 
-    <li class="flow post-content-item"><a href="{{ post.url }}" class="button post-content-link"><img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="{{post.data.categories}}" /> <span>{{ post.date | dateDay }}</span> {{ post.date | dateMonth }} - {{ post.data.title }}</a>
+    <li class="flow post-content-item"><a href="{{ post.url }}" class="button post-content-link"><img src="./../img/{{post.data.categories}}.svg" width="35" height="35" alt="{{post.data.categories}}" /> <span>{{ post.date | dateDay }} {{ post.date | dateMonth }} - </span>  {{ post.data.title }}</a>
     <p>{{ post.data.intro }}</p>
     </li>
 

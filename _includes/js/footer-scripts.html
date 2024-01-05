@@ -139,3 +139,53 @@ accordions.forEach((accordionEl) => {
 });
 
 </script>
+<script>
+    window.addEventListener('load', () => {
+
+        const cc = initCookieConsent();
+
+        cc.run({
+            current_lang : 'en',
+            autoclear_cookies: true,
+            page_scripts: true,
+
+            languages : {
+                en : {
+                    consent_modal : {
+                        title :  "Don't worry - this site just uses cookies for Google Analytics",
+                        description :  'I am using cookies purely to see how my website is performing and being used.',
+                        primary_btn: {
+                            text: 'Accept',
+                            role: 'accept_all'  //'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text : 'Settings',
+                            role : 'settings'   //'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal : {
+                        title : 'Cookie settings',
+                        save_settings_btn : "Save settings",
+                        accept_all_btn : "Accept all",
+                        reject_all_btn : "Reject all",
+                        close_btn_label: "Close",
+                        blocks : [
+                            {
+                                title : "Cookie usage",
+                                description: 'The website automatically collects information from your computer using cookies, which provide me with limited information about how you use the site. '
+                            },{
+                                title : "Analytics cookies",
+                                description: 'We use Google Analytics purely to see site usage and help improve our content for our users.',
+                                toggle : {
+                                    value : 'analytics',
+                                    enabled : false,
+                                    readonly: false
+                                }
+                            },
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>

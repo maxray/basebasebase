@@ -121,7 +121,11 @@ body {
 // Links {
 
 a {
-  color: var(--themeColor);
+  color: var(--black);
+
+  &:hover {
+    color: var(--themeColor);
+  }
 }
 
 
@@ -166,7 +170,7 @@ label {
 }
 
 [data-role="row"] {
-  margin: 0 0 var(--spacing-s);
+  margin: 0 0 var(--space-s);
 }
 [type="name"],
 [type="email"],
@@ -177,7 +181,7 @@ textarea {
   appearance: none;
   display: inline-block;
   margin: 0;
-  padding: var(--spacing-s);
+
   width: 100%;
   background-color: var(--themeColor);
   border-color: var(--themeColor);

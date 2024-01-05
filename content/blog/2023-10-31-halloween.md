@@ -1,5 +1,5 @@
 ---
-title: It's pumkin time again!
+title: It's pumpkin time again!
 date: 2023-10-31 21:29:00 Z
 intro: >
   Do you recall a cartoon called Trapdoor? This years effort reminds me of 'Bony'

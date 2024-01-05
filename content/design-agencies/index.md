@@ -4,7 +4,7 @@ theme: magenta
 ---
 <div class="left flow">
 <div>
-<h1 class="title">Design/Marketing Agencies</h1>
+<h1 class="title">Design & Marketing Agencies</h1>
 
 <p>Managing studio resources is challenging due to the dynamic nature of creative projects. The need for someone who can easily fit into the process is crucial for optimizing resource allocation and ensuring efficiency. Imagine having a temporary team member who could quickly get up to speed with your studio operations, minimise disruption and boost productivity. </p>
 
