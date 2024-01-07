@@ -34,7 +34,10 @@ body {
   }
 }
 
+
+
     main {
+
       @media only screen and (min-width: 48rem) {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -62,6 +65,7 @@ body {
       }
 
       @media only screen and (max-width: 48rem) {
+        overflow-x: hidden;
         .left, .right {padding: var(--space-s);}
       }
 

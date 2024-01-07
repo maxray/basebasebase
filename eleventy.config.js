@@ -11,7 +11,7 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
 module.exports = function(eleventyConfig) {
-
+	
 	//Collections 
 
 	// Returns a collection of meetings in reverse date order
