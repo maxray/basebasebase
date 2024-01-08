@@ -65,8 +65,11 @@ body {
       }
 
       @media only screen and (max-width: 48rem) {
-        overflow-x: hidden;
-        .left, .right {padding: var(--space-s);}
+        
+        .left, .right {
+          padding: var(--space-s);
+          overflow-x: hidden;
+        }
       }
 
     }
