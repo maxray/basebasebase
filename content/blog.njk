@@ -8,6 +8,7 @@ theme: orange
 {% for item in collections.latestBlog %}
 <div class="c-masthead">
 	<div class="left flow">
+	<time datetime="{{ item.data.date | htmlDateString }}">{{ item.data.date | readableDate }}</time>
 	<h1>{{ item.data.title  }}</h1>
 	<p>{{ item.data.intro  }}</p>
   <a href="{{ item.url }}" class="button">Read Post</a>
