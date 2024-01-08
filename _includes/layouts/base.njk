@@ -15,6 +15,38 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
+		<meta property="og:locale" content="en_UK" />
+  	<meta property="og:type" content="website" />
+    <meta property="og:title" content="Creativity & Code" />
+    <meta property="og:description" content="Personal blog of Sush Kelly" />
+    <meta property="og:url" content="http://www.sushkelly.co.uk/" />
+    <meta property="og:site_name" content="Creativity & Code" />
+    <meta property="og:image" content="https://www.sushkelly.co.uk/img/twitter.jpg" /> -->
+  	<meta name="twitter:card" content="summary" /> {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}" /> {% else %}
+  <meta name="twitter:description" content="{{ description or metadata.description }}" /> {% endif %} {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}"> {% else %}
+  <meta name="twitter:title" content="{{ title or metadata.title }}"> {% endif %}
+  <meta name="twitter:site" content="@maxray" />
+  <meta name="twitter:domain" content="maxray" />
+  <meta name="twitter:creator" content="@maxray" />
+
+
+  <meta content="{{ title or metadata.title }}" property="og:site_name"> {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title"> {% else %}
+  <meta content="{{ title or metadata.title }}" property="og:title"> {% endif %} {% if page.title %}
+  <meta content="article" property="og:type"> {% else %}
+  <meta content="website" property="og:type"> {% endif %} {% if page.description %}
+  <meta content="{{ page.description }}" property="og:description"> {% else %}
+  <meta content="{{ site.description }}" property="og:description"> {% endif %} {% if page.url %}
+  <meta content="{{ metadata.url }}{{ page.url }}" property="og:url"> {% endif %} {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ metadata.url }}/about/" property="article:author"> {% endif %}
+  {% if page.image %}
+  <meta content="/img/{{ page.thumbnail_image }}" property="og:image">
+  <meta content="https://www.sushkelly.co.uk/img/twitter.jpg" property="og:image">{% else %}
+  <meta content="https://www.sushkelly.co.uk/img/twitter.jpg" property="og:image"> {% endif %}
+
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
@@ -22,24 +54,8 @@
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		<meta name="generator" content="{{ eleventy.generator }}">
 
-		{#-
-		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-		#}
-
-		{#- Add an arbitrary string to the bundle #}
-		{#- %- css %}* { box-sizing: border-box; }{% endcss % #}
-		{#- Add the contents of a file to the bundle #}
-		{# {%- css %}{% include "_includes/css/fonts.css" %}{% endcss %} #}
 		{%- css %}{% include "_includes/css/critical.css" %}{% endcss %}
-		
-		{#- Or add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
-
-		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+	
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
@@ -48,8 +64,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300&family=Caveat:wght@400;700&family=Raleway:wght@700&family=Grape+Nuts&&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css">
-<script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css">
+		<script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
 	</head>
 	<body data-theme="{{theme}}">
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
