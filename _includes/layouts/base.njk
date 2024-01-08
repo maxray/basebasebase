@@ -15,37 +15,25 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
-		<meta property="og:locale" content="en_UK" />
-  	<meta property="og:type" content="website" />
-    <meta property="og:title" content="Creativity & Code" />
-    <meta property="og:description" content="Personal blog of Sush Kelly" />
-    <meta property="og:url" content="http://www.sushkelly.co.uk/" />
-    <meta property="og:site_name" content="Creativity & Code" />
-    <meta property="og:image" content="https://www.sushkelly.co.uk/img/twitter.jpg" /> -->
-  	<meta name="twitter:card" content="summary" /> {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}" /> {% else %}
-  <meta name="twitter:description" content="{{ description or metadata.description }}" /> {% endif %} {% if page.title %}
-  <meta name="twitter:title" content="{{ page.title }}"> {% else %}
-  <meta name="twitter:title" content="{{ title or metadata.title }}"> {% endif %}
-  <meta name="twitter:site" content="@maxray" />
-  <meta name="twitter:domain" content="maxray" />
-  <meta name="twitter:creator" content="@maxray" />
+		<!-- HTML Meta Tags -->
+<title>Creativity & Code</title>
+<meta name="description" content="Web Design and Digital Services in Birmingham">
 
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="{{ metadata.url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ metadata.description }}">
+<meta property="og:image" content="https://sushkelly.co.uk/img/twitter.jpg">
 
-  <meta content="{{ title or metadata.title }}" property="og:site_name"> {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title"> {% else %}
-  <meta content="{{ title or metadata.title }}" property="og:title"> {% endif %} {% if page.title %}
-  <meta content="article" property="og:type"> {% else %}
-  <meta content="website" property="og:type"> {% endif %} {% if page.description %}
-  <meta content="{{ page.description }}" property="og:description"> {% else %}
-  <meta content="{{ site.description }}" property="og:description"> {% endif %} {% if page.url %}
-  <meta content="{{ metadata.url }}{{ page.url }}" property="og:url"> {% endif %} {% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ metadata.url }}/about/" property="article:author"> {% endif %}
-  {% if page.image %}
-  <meta content="/img/{{ page.thumbnail_image }}" property="og:image">
-  <meta content="https://www.sushkelly.co.uk/img/twitter.jpg" property="og:image">{% else %}
-  <meta content="https://www.sushkelly.co.uk/img/twitter.jpg" property="og:image"> {% endif %}
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="sushkelly.co.uk">
+<meta property="twitter:url" content="{{ metadata.url }}">
+<meta name="twitter:title" content="{{ title or metadata.title }}">
+<meta name="twitter:description" content="{{ metadata.description }}">
+<meta name="twitter:image" content="https://sushkelly.co.uk/img/twitter.jpg">
+
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
