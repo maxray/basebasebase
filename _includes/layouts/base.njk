@@ -80,12 +80,17 @@
 			<small>
 				&#169; 2018 - now 
 				</small>
-			<div class="style-switcher">
-			<label class="switch">
-				<input type="checkbox" id="toggleSwitch" class="js-mode-toggle"  checked aria-label="Jaunty Switch">
-				<span class="slider round"></span>
-			</label> If you really dislike the playful angles of items you can turn them off here. </div>
-		</footer>
+		
+
+<div class="user-toggle">
+<div role="status" class="visually-hidden  js-mode-status "></div>
+<button class=" toggle-button  js-mode-toggle ">
+<span class="visually-hidden  toggle-button__text  js-mode-toggle-text ">Enable dark mode</span>
+<span class="toggle-button__icon" aria-hidden="false"></span>
+</button>
+</div><!-- user-toggle -->
+
+</footer>
 			{% include "js/footer-scripts.html" %}
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 
