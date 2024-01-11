@@ -3,7 +3,7 @@ layout: layouts/default.njk
 eleventyNavigation:
   key: Contact
   order: 3
-
+	theme: yellow
 ---
 <div class="c-masthead c-masthead--duck">
 	<div class="left flow">
@@ -22,9 +22,9 @@ eleventyNavigation:
 
 <div class="post-content flow">
 <p>Lots of programmers have been in a situation where they're stuck on a problem. Sometimes, when they start explaining the issue to someone, even if that person doesn't know anything about programming, they suddenly figure out the solution while talking it through.</p>
-<h2> I can be your duck (but with some added knowledge)</h2>
+<h2  class="title"> I can be your duck (but with some added knowledge)</h2>
 <p>Throughout my career working in studios, especially when I was overseeing a team I would find myself being a slightly more helpful rubber duck, chatting through their issues and finding solutions.</p>
-<h3>It is a quiet life as a freelancer</h3>
+<h3 class="title">It is a quiet life as a freelancer</h3>
 <p> As much as I love freelancing it is a quiet existance and I really do miss those little problem solving challenges, so I thought I would try a thing.</p>
 <p>If you have a design/web (or anything else) problem and fancy a 10min Zoom to talk your problem through book a slot using the Calendly link below :) </p>
 <!-- Calendly inline widget begin -->

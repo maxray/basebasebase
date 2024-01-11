@@ -65,6 +65,31 @@ figure {
   flex-direction: row;
 }
 
+// Contact Card 
+
+&--contact {
+  --linkColor: var(--yellow);
+  --themeColor: var(--yellow);
+
+  figure {
+
+    width: 100%;
+
+    @media only screen and (min-width: 37.5rem) {
+      max-width: 350px;
+      width: 40%;
+    }
+  }
+
+  .flow {
+    --flow-space: var(--space-xs);
+
+    @media only screen and (min-width: 37.5rem) {
+      width: 60%;
+    }
+  }
+}
+
 // Case Study Card 
 
 &--casestudy {
