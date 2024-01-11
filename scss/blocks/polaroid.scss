@@ -6,9 +6,7 @@
       box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
       align-self: flex-start;
 
-      @media only screen and (min-width: 37.5rem) {
-          max-width: 40%;
-        }
+
       img {
         max-width: 100%;
         aspect-ratio: 1/1;
