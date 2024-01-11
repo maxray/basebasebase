@@ -21,34 +21,34 @@ margin-right: var(--flow-space);
 
   }
 
-figure {
-  width: 100%;
-  align-self: flex-start;
-  background: var(--white);
-  padding: var(--space-2xs);
-  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+// figure {
+//   width: 100%;
+//   align-self: flex-start;
+//   background: var(--white);
+//   padding: var(--space-2xs);
+//   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 
 
-  @media only screen and (min-width: 37.5rem) {
-    max-width: 40%;
-  }
+//   @media only screen and (min-width: 37.5rem) {
+//     max-width: 40%;
+//   }
 
 
 
 
-  img {
-    max-width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
+//   img {
+//     max-width: 100%;
+//     aspect-ratio: 1/1;
+//     object-fit: cover;
+//   }
 
-  figcaption {
-    font-family: var(--handwriting-font);
-    line-height: 0.7;
-    padding: 0.5rem 0 0 0;
+//   figcaption {
+//     font-family: var(--handwriting-font);
+//     line-height: 0.7;
+//     padding: 0.5rem 0 0 0;
 
-  }
-}
+//   }
+// }
 
 .flow {
   @media only screen and (min-width: 37.5rem) {

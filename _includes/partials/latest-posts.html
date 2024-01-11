@@ -3,7 +3,7 @@
 {% for item in collections.latestBlogs %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<div class="c-card c-card--post">
-		<figure>
+		<figure class="polaroid">
 			{% set img = item.data.thumbnail_image %}
 			{% image img, item.data.title , '(min-width: 600px) 50vw, 100vw' %}
 			<figcaption>{{ item.data.title }}</figcaption>
