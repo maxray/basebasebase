@@ -40,7 +40,7 @@ flex-direction: column-reverse;
       grid-area: 1 / 6 / 2 / 9;
       position: relative;
 
-      .polaroid {
+      .polaroid, .ducky {
         @media only screen and (min-width: 48rem) {
           position: absolute;
           top: -15vw;

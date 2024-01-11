@@ -16,9 +16,16 @@
       }
 }
 
+.ducky {
+
+  figcaption {
+    font-family: var(--handwriting-font);
+  }
+}
+
 [data-jauntyness="jaunty"] {
 
-.polaroid {
+.polaroid , .ducky {
     transform: rotate(2deg);
     margin-bottom: var(--space-s);
   }
