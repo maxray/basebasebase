@@ -16,26 +16,26 @@ theme: yellow
 </div>
 </div>
 
-<form class="contact-form" name="contact-form" method="POST" data-netlify="true">
+<form class="contact-form" name="contact-form" action="/thanks" method="POST" data-netlify="true" netlify>
 
 <div data-role="row">
-<label for="contact-name">Name</label>
-<input type="text" id="contact-name"  name="contact-name">
+<label for="contactName">Name</label>
+<input type="text" id="contactName"  name="contactName">
 </div>
 
 <div data-role="row">
-<label for="contact-email">Email</label>
-<input type="email" id="contact-email"  name="contact-email">
+<label for="contactEmail">Email</label>
+<input type="email" id="contactEmail"  name="contactEmail">
 </div>
 
 <div data-role="row">
-<label for="contact-tel">Phone</label>
-<input type="tel" id="contact-tel" name="contact-tel">
+<label for="contactTel">Phone</label>
+<input type="tel" id="contactTel" name="contactTel">
 </div>
 
 <div data-role="row">
-<label for="contact-message">Message</label>
-<textarea id="contact-message"  name="contact-message"></textarea>
+<label for="contactMessage">Message</label>
+<textarea id="contactMessage"  name="contactMessage"></textarea>
 </div>
 
 <div data-align="center">

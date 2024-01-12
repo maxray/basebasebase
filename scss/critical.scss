@@ -208,8 +208,8 @@ textarea {
 [type="text"]:focus,
 textarea:focus {
   outline: 0;
-  border-color: var(--themeColor);
-  accent-color: var(--themeColor);
+  border-color: color-mix(in srgb, var(--themeColor) 75%, var(--black));
+  accent-color: color-mix(in srgb, var(--themeColor) 75%, var(--black));
 }
 
 input[type]::placeholder {
