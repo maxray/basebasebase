@@ -10,7 +10,7 @@ categories:
 
 It is always nice to do something new, working in the web this is a regular occurance! 
 
-A cliwent asked if we could obfuscate his email address on the contact page so there was less chance of it being harvested for spam purposes. With his site being hosted on Netlify we could make use of Netlify functions to do this. 
+A client asked if we could obfuscate his email address on the contact page so there was less chance of it being harvested for spam purposes. With his site being hosted on Netlify we could make use of Netlify functions to do this. 
 
 ## Basic Set Up and Usage
 
