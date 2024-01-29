@@ -131,6 +131,14 @@ a {
   }
 }
 
+//FOCUS
+
+*:focus-visible {
+  outline: 3px dotted var(--magenta);
+  outline-offset: var(--space-3xs);
+
+}
+
 
 // High contrast selection 
 
