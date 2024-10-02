@@ -1,0 +1,33 @@
+---
+layout: layouts/default.njk
+---
+<div class="c-masthead">
+	<div class="left flow">
+	<h1>{{ title }}</h1>
+	<div class="c-masthead-meta"><img src="/img/{{categories}}.svg" width="35" height="35" alt="{{categories}}" />  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></div>
+	<p>{{ intro  }}</p>
+	</div>
+	<div class="right">
+{%- if thumbnail_image %}
+<figure class="polaroid">
+{% set img = thumbnail_image %}
+	{% image img, title ,  '(min-width: 600px) 50vw, 100vw'  %}
+	<figcaption>{{ title }}</figcaption>
+</figure>
+{%- endif %}
+	</div>
+</div>
+<div class="post-content flow">
+{{ content | safe }}
+
+{%- if collections.weeknotes %}
+{%- set previousPost = collections.weeknotes | getPreviousCollectionItem %}
+{%- set nextPost = collections.weeknotes | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<ul class="links-nextprev">
+	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}
+</div>
