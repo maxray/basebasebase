@@ -107,7 +107,10 @@ body {
 
   }
 
-
+  strong {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
 
   p {
     margin-bottom: var(--space-xs);

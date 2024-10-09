@@ -189,6 +189,15 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+
+	// Add custom split filter
+	eleventyConfig.addFilter('split', function (str, separator) {
+		if (typeof str !== 'string') {
+			return []; // If str is not a string, return an empty array
+		}
+		return str.split(separator);
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {
