@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 
 Turns out it isn't the easiest thing in the world to do.. <!--more-->it takes time and patience and even then could fail miserably. I started with good spirits, and following the starter recipe spent 5 days trying to create my starting point for the bread... sadly by Day 5 my starter smelt right but was not full of bubbles of carbon dioxide that would make it float in water.
 
-<p><img  src="{{ site.baseurl }}/uploads/sourdough.png" alt="Sourdough"  /></p>
+{% image "sourdough.png", "Sourdough" , '(min-width: 600px) 50vw, 100vw' %}
 
 Back to the drawing board, and as the Christmas Holidays landed I found I had the time to put into trying version two.
 
