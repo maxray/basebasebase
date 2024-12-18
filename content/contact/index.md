@@ -11,7 +11,7 @@ theme: yellow
 </div>
 <div class="calling-card">
 <div>
-<h2>I am mostly booked up till the end of the year, but if you need a nice shiny new website, an extra set of hands for a big project, some cover in the studio or just a little help with something, don't hesitate to get in touch and I will see what I can do.</h2>
+<h2>I am booked up till the end of the year, but if you need a nice shiny new website, an extra set of hands for a big project, some cover in the studio or just a little help with something in 2025, don't hesitate to get in touch and I will see what I can do.</h2>
 <p>If you want to know how I like to work check out  <a href="/my-process/">how I help smaller clients</a> or <a href="/design-agencies/">how I work with design agencies</a>.</p>
 </div>
 </div>
