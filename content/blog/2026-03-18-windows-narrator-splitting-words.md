@@ -51,7 +51,7 @@ So why was the **“W”** getting separated?
 
 [Windows Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) doesn’t read your DOM the way a browser renders it visually.
 
-Instead, it reads a stream of accessible objects exposed through ['Microsoft UI Automation (UIA)'](https://learn.microsoft.com/windows/win32/winauto/uiauto-entry).
+Instead, it reads a stream of accessible objects exposed through ['Microsoft UI Automation (UIA)'](https://en.wikipedia.org/wiki/Microsoft_UI_Automation).
 
 Browsers translate your page into an accessibility tree that looks more like:
 
