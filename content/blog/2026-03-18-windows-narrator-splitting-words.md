@@ -8,23 +8,13 @@ categories:
   - Work
 ---
 
-## Why Windows Narrator Was Reading “W — elcome”
-
-While testing a homepage hero banner for accessibility, I ran into a strange screen reader issue:
-
-[Windows Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)  would announce the heading as:
-
-> “Double-you … elcome”
-
-But only during **continuous reading**.
-
 If you navigated back to the heading and read it again, it sounded perfectly normal.
 
 This turned out to be a great example of how accessibility bugs aren’t always caused by ARIA mistakes or bad HTML — sometimes they’re side effects of how assistive tech processes the accessibility tree.
 
 ---
 
-### The Setup
+## The Setup
 
 Our hero section looked roughly like this:
 
@@ -59,7 +49,7 @@ So why was the **“W”** getting separated?
 
 ## The Key Insight: Narrator Reads the Accessibility Tree, Not HTML
 
-Windows Narrator doesn’t read your DOM the way a browser renders it visually.
+[Windows Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) doesn’t read your DOM the way a browser renders it visually.
 
 Instead, it reads a stream of accessible objects exposed through ['Microsoft UI Automation (UIA)'](https://learn.microsoft.com/windows/win32/winauto/uiauto-entry).
 
